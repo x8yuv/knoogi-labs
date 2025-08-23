@@ -89,7 +89,7 @@ export default function Home() {
       <section className="min-h-screen pt-16 relative" data-testid="hero-section">
         <div className="w-full h-full">
           <Spline
-            scene="https://prod.spline.design/IuKjf7lBmK2UTc6W/scene.splinecode"
+            scene="https://prod.spline.design/O4KW31BYKC1a4M1N/scene.splinecode"
             style={{ width: '100%', height: '100vh' }}
           />
         </div>
