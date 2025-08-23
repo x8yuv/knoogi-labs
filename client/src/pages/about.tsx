@@ -5,13 +5,14 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Calendar, Building, Linkedin, Twitter, Github } from "lucide-react";
 import { Link } from "wouter";
 import yuvrajPhoto from "@assets/IMG_7245_1755975266928.jpg";
+import deepikaPhoto from "@assets/Screenshot_20250823-125352_1755975358809.png";
 
 export default function About() {
   const founders = [
     {
       name: "Deepika Misra",
       role: "Co-Founder & CEO",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+      image: deepikaPhoto,
       description: "Deepika brings over 8 years of experience in technology leadership and business strategy. She specializes in AI implementation and digital transformation, helping businesses leverage cutting-edge technology for growth.",
       color: "tech-blue",
       socials: [
