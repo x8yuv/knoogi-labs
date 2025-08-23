@@ -8,6 +8,7 @@ import aiDevelopmentImage from "@assets/ai-7977960_1920_1755937825207.jpg";
 import appDevelopmentImage from "@assets/iphone-676726_1920_1755938088882.jpg";
 import digitalMarketingImage from "@assets/online-marketing-1246457_1920_1755938312222.jpg";
 import mediaCreationImage from "@assets/social-media-4140959_1920_1755938523787.jpg";
+import customDevelopmentImage from "@assets/laptop-2620118_1920_1755938809797.jpg";
 import { 
   Brain, 
   Smartphone, 
@@ -60,7 +61,7 @@ export default function Home() {
       description: "Tailored software solutions, web applications, and enterprise systems built to your specifications.",
       gradient: "from-indigo-50 to-blue-50",
       iconGradient: "from-indigo-500 to-tech-blue",
-      image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200"
+      image: customDevelopmentImage
     },
     {
       icon: Handshake,
