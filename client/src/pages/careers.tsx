@@ -10,21 +10,14 @@ export default function Careers() {
     {
       title: "Senior Full-Stack Developer",
       department: "Engineering",
-      location: "Calgary, AB (Remote)",
+      location: "Remote",
       type: "Full-time",
       description: "Join our team to build cutting-edge web applications using React, Node.js, and modern development practices."
     },
     {
-      title: "AI/ML Engineer",
-      department: "AI Development",
-      location: "Calgary, AB (Hybrid)",
-      type: "Full-time",
-      description: "Work on innovative AI solutions, machine learning models, and intelligent automation systems."
-    },
-    {
       title: "Digital Marketing Specialist",
       department: "Marketing",
-      location: "Calgary, AB (Remote)",
+      location: "Remote",
       type: "Full-time",
       description: "Drive digital marketing strategies, campaign management, and help grow our client base."
     }
