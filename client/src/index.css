@@ -163,4 +163,30 @@
   .hover\:text-tech-blue:hover {
     color: var(--tech-blue);
   }
+  
+  /* Hide duplicate navigation elements within Spline scenes */
+  [data-testid="hero-section"] div[style*="position: absolute"],
+  [data-testid="contact-hero-section"] div[style*="position: absolute"],
+  [data-testid="hero-section"] .spline-navigation,
+  [data-testid="contact-hero-section"] .spline-navigation,
+  [data-testid="hero-section"] div:has(a),
+  [data-testid="contact-hero-section"] div:has(a) {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Hide any overlay divs that contain navigation links */
+  [data-testid="hero-section"] > div > div:not([style*="width: 100%"]),
+  [data-testid="contact-hero-section"] > div > div:not([style*="width: 100%"]) {
+    display: none !important;
+  }
+  
+  /* Ensure Spline container takes full space */
+  [data-testid="hero-section"] spline-viewer,
+  [data-testid="contact-hero-section"] spline-viewer {
+    width: 100% !important;
+    height: 100vh !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
 }
