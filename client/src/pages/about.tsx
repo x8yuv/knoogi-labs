@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Calendar, Building, Linkedin, Twitter, Github } from "lucide-react";
 import { Link } from "wouter";
+import yuvrajPhoto from "@assets/IMG_7245_1755975266928.jpg";
 
 export default function About() {
   const founders = [
@@ -21,7 +22,7 @@ export default function About() {
     {
       name: "Yuvraj Manchanda",
       role: "Co-Founder & CTO",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300",
+      image: yuvrajPhoto,
       description: "Yuvraj is a full-stack developer and technology architect with expertise in scalable systems and modern development frameworks. He leads our technical vision and ensures delivery of high-quality solutions.",
       color: "innovation-purple",
       socials: [
