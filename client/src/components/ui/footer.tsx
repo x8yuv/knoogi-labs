@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { MapPin } from "lucide-react";
-import logoImage from "@assets/image_1755937591750.png";
+import logoImage from "@assets/Untitled design_1755937773022.png";
 
 export function Footer() {
   return (
