@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import Spline from '@splinetool/react-spline';
+import aiDevelopmentImage from "@assets/ai-7977960_1920_1755937825207.jpg";
 import { 
   Brain, 
   Smartphone, 
@@ -24,7 +25,7 @@ export default function Home() {
       description: "Cutting-edge artificial intelligence solutions, machine learning models, and intelligent automation systems.",
       gradient: "from-blue-50 to-indigo-50",
       iconGradient: "from-tech-blue to-innovation-purple",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200"
+      image: aiDevelopmentImage
     },
     {
       icon: Smartphone,
