@@ -64,9 +64,11 @@ export function Footer() {
                   About Us
                 </span>
               </Link>
-              <span className="block text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-team-link">
-                Our Team
-              </span>
+              <div>
+                <span className="block text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-team-link">
+                  Our Team
+                </span>
+              </div>
               <Link href="/careers">
                 <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-careers-link">
                   Careers
