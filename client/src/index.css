@@ -176,7 +176,7 @@
     position: absolute;
     top: 80px;
     left: 0;
-    right: 35%;
+    width: 55%;
     height: 500px;
     background: #B6D9ED;
     z-index: 2;
