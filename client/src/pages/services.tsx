@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
-import aiDevelopmentImage from "@assets/ai-7977960_1920_1755934173370.jpg";
+import aiDevelopmentImage from "@assets/ai-7977960_1920_1755937825207.jpg";
 import { 
   Brain, 
   Smartphone, 
