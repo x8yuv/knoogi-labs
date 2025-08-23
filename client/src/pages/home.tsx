@@ -9,6 +9,7 @@ import appDevelopmentImage from "@assets/iphone-676726_1920_1755938088882.jpg";
 import digitalMarketingImage from "@assets/online-marketing-1246457_1920_1755938312222.jpg";
 import mediaCreationImage from "@assets/social-media-4140959_1920_1755938523787.jpg";
 import customDevelopmentImage from "@assets/laptop-2620118_1920_1755938809797.jpg";
+import strategicConsultationImage from "@assets/technology-298256_1920_1755939089659.jpg";
 import { 
   Brain, 
   Smartphone, 
@@ -69,7 +70,7 @@ export default function Home() {
       description: "Technology strategy, digital transformation guidance, and technical architecture consulting.",
       gradient: "from-gray-50 to-slate-50",
       iconGradient: "from-slate-500 to-gray-600",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200"
+      image: strategicConsultationImage
     }
   ];
 
