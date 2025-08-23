@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import aiDevelopmentImage from "@assets/ai-7977960_1920_1755937825207.jpg";
+import appDevelopmentImage from "@assets/iphone-676726_1920_1755938088882.jpg";
 import { 
   Brain, 
   Smartphone, 
@@ -55,7 +56,7 @@ export default function Services() {
       ],
       gradient: "from-purple-50 to-pink-50",
       iconGradient: "from-innovation-purple to-pink-500",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      image: appDevelopmentImage,
       deliverables: ["Mobile App", "Source Code", "Documentation", "Store Listing"],
       timeline: "8-16 weeks"
     },

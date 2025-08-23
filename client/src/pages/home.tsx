@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import Spline from '@splinetool/react-spline';
 import aiDevelopmentImage from "@assets/ai-7977960_1920_1755937825207.jpg";
+import appDevelopmentImage from "@assets/iphone-676726_1920_1755938088882.jpg";
 import { 
   Brain, 
   Smartphone, 
@@ -33,7 +34,7 @@ export default function Home() {
       description: "Native and cross-platform mobile applications with stunning UI/UX and robust functionality.",
       gradient: "from-purple-50 to-pink-50",
       iconGradient: "from-innovation-purple to-pink-500",
-      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200"
+      image: appDevelopmentImage
     },
     {
       icon: TrendingUp,
