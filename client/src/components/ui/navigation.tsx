@@ -19,9 +19,9 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center" data-testid="logo-link">
-            <span className="text-xl text-rich-black font-brand uppercase">
-              <span style={{ fontWeight: 800 }}>KNOOGI</span>
-              <span style={{ fontWeight: 700 }}> LABS</span>
+            <span className="text-2xl text-rich-black font-brand uppercase">
+              <span style={{ fontWeight: 900 }}>KNOOGI</span>
+              <span style={{ fontWeight: 800 }}> LABS</span>
             </span>
           </Link>
           
