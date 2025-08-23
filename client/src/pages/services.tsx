@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import aiDevelopmentImage from "@assets/ai-7977960_1920_1755937825207.jpg";
 import appDevelopmentImage from "@assets/iphone-676726_1920_1755938088882.jpg";
+import digitalMarketingImage from "@assets/online-marketing-1246457_1920_1755938312222.jpg";
 import { 
   Brain, 
   Smartphone, 
@@ -75,7 +76,7 @@ export default function Services() {
       ],
       gradient: "from-green-50 to-teal-50",
       iconGradient: "from-success-green to-teal-500",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      image: digitalMarketingImage,
       deliverables: ["Marketing Strategy", "Campaign Setup", "Content", "Reports"],
       timeline: "4-8 weeks"
     },

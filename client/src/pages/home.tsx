@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import Spline from '@splinetool/react-spline';
 import aiDevelopmentImage from "@assets/ai-7977960_1920_1755937825207.jpg";
 import appDevelopmentImage from "@assets/iphone-676726_1920_1755938088882.jpg";
+import digitalMarketingImage from "@assets/online-marketing-1246457_1920_1755938312222.jpg";
 import { 
   Brain, 
   Smartphone, 
@@ -42,7 +43,7 @@ export default function Home() {
       description: "Strategic digital marketing campaigns, SEO optimization, and data-driven growth solutions.",
       gradient: "from-green-50 to-teal-50",
       iconGradient: "from-success-green to-teal-500",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=200"
+      image: digitalMarketingImage
     },
     {
       icon: Video,
