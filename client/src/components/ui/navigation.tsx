@@ -20,7 +20,7 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-gray-800/20" style={{ backgroundColor: 'rgba(7, 21, 36, 0.9)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center space-x-3" data-testid="logo-link">
+          <Link href="/" className="flex items-center space-x-3" onClick={() => window.scrollTo(0, 0)} data-testid="logo-link">
             <img 
               src={logoImage} 
               alt="Knoogi Labs Logo" 
@@ -35,17 +35,18 @@ export function Navigation() {
           
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map(({ href, label }) => (
-              <Link key={href} href={href}>
-                <span 
-                  className={`nav-link transition-colors ${
-                    location === href 
-                      ? "text-blue-400 font-medium" 
-                      : "text-gray-300 hover:text-blue-400"
-                  }`}
-                  data-testid={`nav-${label.toLowerCase()}`}
-                >
-                  {label}
-                </span>
+              <Link 
+                key={href} 
+                href={href}
+                onClick={() => window.scrollTo(0, 0)}
+                className={`nav-link transition-colors ${
+                  location === href 
+                    ? "text-blue-400 font-medium" 
+                    : "text-gray-300 hover:text-blue-400"
+                }`}
+                data-testid={`nav-${label.toLowerCase()}`}
+              >
+                {label}
               </Link>
             ))}
           </div>
@@ -72,12 +73,16 @@ export function Navigation() {
                 <Link 
                   key={href} 
                   href={href} 
-                  onClick={() => setIsOpen(false)}
-                  className={`block py-2 transition-colors ${
+                  onClick={() => {
+                    setIsOpen(false);
+                    window.scrollTo(0, 0);
+                  }}
+                  className={`block py-2 transition-none ${
                     location === href 
                       ? "text-blue-400 font-medium" 
                       : "text-gray-300 active:text-blue-400"
                   }`}
+                  style={{ touchAction: 'manipulation' }}
                   data-testid={`mobile-nav-${label.toLowerCase()}`}
                 >
                   {label}
