@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
+import Spline from '@splinetool/react-spline';
 import { 
   MapPin, 
   Phone, 
@@ -144,23 +145,12 @@ export default function Contact() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 gradient-overlay">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center space-y-6 animate-fadeIn">
-            <h1 className="text-5xl lg:text-6xl font-bold font-display" data-testid="contact-title">
-              Get In{" "}
-              <span className="bg-gradient-to-r from-tech-blue to-innovation-purple bg-clip-text text-transparent">
-                Touch
-              </span>
-            </h1>
-            <p className="text-xl text-professional-grey max-w-3xl mx-auto leading-relaxed" data-testid="contact-subtitle">
-              Ready to start your next project? We'd love to hear from you. Let's discuss how we can help bring your ideas to life.
-            </p>
-            <div className="flex items-center justify-center space-x-2 text-tech-blue">
-              <MapPin className="w-5 h-5" />
-              <span className="font-medium" data-testid="contact-location">Alberta, Canada</span>
-            </div>
-          </div>
+      <section className="min-h-screen pt-16 relative" data-testid="contact-hero-section">
+        <div className="w-full h-full">
+          <Spline
+            scene="https://prod.spline.design/GWAOdImzPXQDq9WD/scene.splinecode"
+            style={{ width: '100%', height: '100vh' }}
+          />
         </div>
       </section>
 
