@@ -12,7 +12,7 @@ export function Footer() {
               <img 
                 src={logoSvg} 
                 alt="Knoogi Labs Logo" 
-                className="w-8 h-8"
+                className="w-10 h-10"
                 data-testid="footer-logo-image"
               />
               <span className="text-2xl font-brand uppercase text-white">

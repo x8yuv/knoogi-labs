@@ -24,7 +24,7 @@ export function Navigation() {
             <img 
               src={logoSvg} 
               alt="Knoogi Labs Logo" 
-              className="w-8 h-8"
+              className="w-10 h-10"
               data-testid="logo-image"
             />
             <span className="text-2xl text-rich-black dark:text-white font-brand uppercase">
