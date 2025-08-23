@@ -92,12 +92,32 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="min-h-screen pt-16 relative" data-testid="hero-section">
+      <section className="min-h-screen pt-16 relative overflow-hidden" data-testid="hero-section">
         <div className="w-full h-full">
           <Spline
             scene="https://prod.spline.design/O4KW31BYKC1a4M1N/scene.splinecode"
-            style={{ width: '100%', height: '100vh' }}
+            style={{ width: '100%', height: '100vh', minHeight: '500px' }}
+            className="hidden md:block"
           />
+          {/* Mobile fallback */}
+          <div className="md:hidden flex items-center justify-center h-screen bg-gradient-to-br from-tech-blue/10 to-innovation-purple/10">
+            <div className="text-center px-6">
+              <h1 className="text-4xl font-bold font-display mb-4 text-rich-black">
+                Welcome to{" "}
+                <span className="bg-gradient-to-r from-tech-blue to-innovation-purple bg-clip-text text-transparent">
+                  Knoogi Labs
+                </span>
+              </h1>
+              <p className="text-lg text-professional-grey mb-8">
+                Modern development solutions from Alberta, Canada
+              </p>
+              <Link href="/services">
+                <Button className="bg-tech-blue text-white hover:bg-blue-600 font-semibold">
+                  Explore Our Services
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -111,24 +131,24 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
                 <Card 
                   key={index} 
-                  className={`group bg-gradient-to-br ${service.gradient} p-8 hover:shadow-xl transition-all duration-300 border-0 animate-fadeIn`}
+                  className={`group bg-gradient-to-br ${service.gradient} p-4 md:p-8 hover:shadow-xl transition-all duration-300 border-0 animate-fadeIn`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="p-0 space-y-6">
-                    <div className={`w-16 h-16 bg-gradient-to-br ${service.iconGradient} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform`}>
-                      <Icon className="text-white w-8 h-8" />
+                  <CardContent className="p-0 space-y-4 md:space-y-6">
+                    <div className={`w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br ${service.iconGradient} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform`}>
+                      <Icon className="text-white w-6 h-6 md:w-8 md:h-8" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold mb-3 font-display" data-testid={`service-title-${index}`}>
+                      <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 font-display" data-testid={`service-title-${index}`}>
                         {service.title}
                       </h3>
-                      <p className="text-professional-grey" data-testid={`service-description-${index}`}>
+                      <p className="text-sm md:text-base text-professional-grey" data-testid={`service-description-${index}`}>
                         {service.description}
                       </p>
                     </div>

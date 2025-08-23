@@ -101,9 +101,26 @@
     @apply border-border;
   }
 
+  /* Ensure mobile scrolling works */
+  html, body {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Fix any potential mobile overflow issues */
+  .min-h-screen {
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile */
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
     font-family: var(--font-brand);
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   h1, h2, h3, h4, h5, h6 {
