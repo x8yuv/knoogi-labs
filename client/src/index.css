@@ -164,4 +164,25 @@
     color: var(--tech-blue);
   }
   
+  /* Hide the navigation header in Spline scenes */
+  [data-testid="hero-section"] {
+    overflow: hidden;
+  }
+  
+  [data-testid="hero-section"]::before,
+  [data-testid="contact-hero-section"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: var(--background);
+    z-index: 5;
+    pointer-events: none;
+  }
+  
+  [data-testid="contact-hero-section"] {
+    overflow: hidden;
+  }
 }
