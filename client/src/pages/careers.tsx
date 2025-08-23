@@ -64,6 +64,127 @@ export default function Careers() {
         </div>
       </section>
 
+      {/* Company Stats Section */}
+      <section className="py-16 bg-gradient-to-r from-tech-blue to-innovation-purple">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold font-display text-white mb-4">Growing Together</h2>
+            <p className="text-blue-100 text-lg">Building the future, one project at a time</p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div className="text-3xl font-bold text-white mb-1">100+</div>
+              <div className="text-blue-100 text-sm">Projects Delivered</div>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <div className="text-3xl font-bold text-white mb-1">50+</div>
+              <div className="text-blue-100 text-sm">Happy Clients</div>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="text-3xl font-bold text-white mb-1">24h</div>
+              <div className="text-blue-100 text-sm">Response Time</div>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div className="text-3xl font-bold text-white mb-1">100%</div>
+              <div className="text-blue-100 text-sm">Remote First</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Culture Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold font-display mb-6">Our Culture</h2>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-success-green rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-rich-black mb-1">Innovation First</h3>
+                    <p className="text-professional-grey">We encourage creative thinking and embrace new technologies</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-tech-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-rich-black mb-1">Collaborative Environment</h3>
+                    <p className="text-professional-grey">Work alongside talented professionals who support each other</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-innovation-purple rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-rich-black mb-1">Growth Mindset</h3>
+                    <p className="text-professional-grey">Continuous learning and professional development opportunities</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <div className="bg-gradient-to-br from-tech-blue/20 to-innovation-purple/20 rounded-2xl p-8 relative overflow-hidden">
+                <div className="absolute inset-0">
+                  <div className="absolute top-4 right-4 w-32 h-32 bg-tech-blue/10 rounded-full blur-2xl"></div>
+                  <div className="absolute bottom-8 left-8 w-24 h-24 bg-innovation-purple/10 rounded-full blur-2xl"></div>
+                </div>
+                
+                <div className="relative z-10">
+                  <div className="text-6xl mb-4">🚀</div>
+                  <h3 className="text-2xl font-bold font-display mb-3">Ready to Launch Your Career?</h3>
+                  <p className="text-professional-grey mb-6">Join a team that values innovation, creativity, and personal growth. Let's build something amazing together.</p>
+                  
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-tech-blue/10 text-tech-blue rounded-full text-sm font-medium">Remote-First</span>
+                    <span className="px-3 py-1 bg-success-green/10 text-success-green rounded-full text-sm font-medium">Flexible Hours</span>
+                    <span className="px-3 py-1 bg-innovation-purple/10 text-innovation-purple rounded-full text-sm font-medium">Growth Opportunities</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
