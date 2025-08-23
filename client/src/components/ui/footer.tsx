@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { MapPin } from "lucide-react";
+import logoSvg from "@/assets/knoogi-labs-logo.svg";
 
 export function Footer() {
   return (
@@ -9,7 +10,7 @@ export function Footer() {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <img 
-                src="/knoogi-labs-logo.svg" 
+                src={logoSvg} 
                 alt="Knoogi Labs Logo" 
                 className="w-8 h-8"
                 data-testid="footer-logo-image"

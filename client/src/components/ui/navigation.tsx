@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "./button";
 import { ThemeToggle } from "./theme-toggle";
 import { Menu, X } from "lucide-react";
+import logoSvg from "@/assets/knoogi-labs-logo.svg";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-3" data-testid="logo-link">
             <img 
-              src="/knoogi-labs-logo.svg" 
+              src={logoSvg} 
               alt="Knoogi Labs Logo" 
               className="w-8 h-8"
               data-testid="logo-image"
