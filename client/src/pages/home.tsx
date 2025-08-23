@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import Spline from '@splinetool/react-spline';
-import logoImage from "@assets/Untitled design_1755937273622.png";
 import { 
   Brain, 
   Smartphone, 
@@ -93,26 +92,6 @@ export default function Home() {
             scene="https://prod.spline.design/O4KW31BYKC1a4M1N/scene.splinecode"
             style={{ width: '100%', height: '100vh' }}
           />
-        </div>
-        
-        {/* Hero Content Overlay */}
-        <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-center space-y-6 px-6">
-            <div className="flex items-center justify-center space-x-4 mb-8">
-              <img 
-                src={logoImage} 
-                alt="Knoogi Labs Logo" 
-                className="w-20 h-20 rounded-xl"
-                data-testid="hero-logo"
-              />
-              <h1 className="text-6xl lg:text-7xl font-bold font-display text-white">
-                KNOOGI LABS
-              </h1>
-            </div>
-            <p className="text-2xl lg:text-3xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
-              Modern development solutions from the heart of Alberta, Canada. Building the future with innovative technology.
-            </p>
-          </div>
         </div>
       </section>
 
