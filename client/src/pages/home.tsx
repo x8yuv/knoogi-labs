@@ -106,7 +106,7 @@ export default function Home() {
         </div>
         
         {/* Mobile Hero */}
-        <div className="md:hidden w-full h-full bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative">
+        <div className="md:hidden w-full h-full bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900 relative">
           {/* Animated background elements */}
           <div className="absolute inset-0">
             <div className="absolute top-20 left-10 w-72 h-72 bg-tech-blue/20 rounded-full blur-3xl animate-pulse"></div>
@@ -118,11 +118,18 @@ export default function Home() {
           <div className="absolute inset-0 opacity-10">
             <div style={{
               backgroundImage: `
+                linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px)
+              `,
+              backgroundSize: '50px 50px'
+            }} className="w-full h-full dark:hidden"></div>
+            <div style={{
+              backgroundImage: `
                 linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
               `,
               backgroundSize: '50px 50px'
-            }} className="w-full h-full"></div>
+            }} className="w-full h-full hidden dark:block"></div>
           </div>
           
           {/* Content */}
@@ -139,15 +146,15 @@ export default function Home() {
               </div>
               
               {/* Main heading */}
-              <h1 className="text-4xl font-bold font-display mb-4 text-white leading-tight">
+              <h1 className="text-4xl font-bold font-display mb-4 text-rich-black dark:text-white leading-tight">
                 Welcome to{" "}
-                <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-tech-blue to-innovation-purple bg-clip-text text-transparent">
                   Knoogi Labs
                 </span>
               </h1>
               
               {/* Subtitle */}
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-professional-grey dark:text-gray-300 mb-8 leading-relaxed">
                 Modern development solutions from the heart of Alberta, Canada. Building the future with innovative technology.
               </p>
               
@@ -159,7 +166,7 @@ export default function Home() {
                   </Button>
                 </Link>
                 <Link href="/contact">
-                  <Button variant="outline" className="w-full py-3 border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 transition-all duration-300 rounded-xl backdrop-blur-sm">
+                  <Button variant="outline" className="w-full py-3 border-2 border-tech-blue/30 dark:border-white/30 text-tech-blue dark:text-white hover:bg-tech-blue dark:hover:bg-white hover:text-white dark:hover:text-slate-900 transition-all duration-300 rounded-xl backdrop-blur-sm">
                     Get In Touch
                   </Button>
                 </Link>
@@ -167,7 +174,7 @@ export default function Home() {
               
               {/* Scroll indicator */}
               <div className="mt-12 animate-bounce">
-                <svg className="w-6 h-6 text-white/60 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-tech-blue/60 dark:text-white/60 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
               </div>
