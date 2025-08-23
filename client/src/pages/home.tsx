@@ -3,7 +3,6 @@ import { Footer } from "@/components/ui/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import VenomBeam from "@/components/ui/venom-beam";
 import Spline from '@splinetool/react-spline';
 import { 
   Brain, 
@@ -87,101 +86,12 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <VenomBeam className="min-h-screen flex items-center pt-16">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8 animate-fadeIn">
-              <div className="space-y-6">
-                <div className="flex items-center space-x-2 text-success-green">
-                  <CheckCircle className="w-4 h-4" />
-                  <span className="text-sm font-medium text-rich-black dark:text-white" data-testid="hero-location">From Alberta, Canada</span>
-                </div>
-                <h1 className="text-5xl lg:text-6xl font-bold leading-tight font-display text-rich-black dark:text-white">
-                  Modern Development{" "}
-                  <span className="bg-gradient-to-r from-success-green to-tech-blue bg-clip-text text-transparent">
-                    Solutions
-                  </span>
-                </h1>
-                <p className="text-xl text-professional-grey dark:text-gray-300 leading-relaxed" data-testid="hero-description">
-                  Knoogi Labs specializes in AI, app development, digital marketing, media creation, and custom development services. We build the future, one innovation at a time.
-                </p>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact">
-                  <Button 
-                    size="lg" 
-                    className="bg-tech-blue text-white hover:bg-blue-600 font-semibold"
-                    data-testid="hero-get-started"
-                  >
-                    Get Started
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </Link>
-                <Link href="/services">
-                  <Button 
-                    variant="outline" 
-                    size="lg" 
-                    className="font-semibold border-professional-grey text-professional-grey hover:border-tech-blue hover:text-tech-blue"
-                    data-testid="hero-view-work"
-                  >
-                    View Our Work
-                  </Button>
-                </Link>
-              </div>
-              
-              <div className="flex items-center space-x-8 pt-8">
-                {stats.map(({ value, label }, index) => (
-                  <div key={index} className="text-center">
-                    <div className="text-2xl font-bold text-rich-black dark:text-white font-display" data-testid={`stat-value-${index}`}>
-                      {value}
-                    </div>
-                    <div className="text-sm text-professional-grey dark:text-gray-300" data-testid={`stat-label-${index}`}>
-                      {label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            <div className="relative animate-fadeIn">
-              <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Professional tech team collaborating in modern Alberta office" 
-                className="rounded-2xl shadow-2xl w-full h-auto"
-                data-testid="hero-image"
-              />
-              <Card className="absolute -bottom-6 -right-6 shadow-lg border-0">
-                <CardContent className="p-6 bg-white/90 dark:bg-gray-900/80 border-gray-200 dark:border-gray-700">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-success-green rounded-full animate-pulse"></div>
-                    <span className="text-sm font-medium text-rich-black dark:text-white" data-testid="hero-status">Active Development</span>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </VenomBeam>
-
-      {/* Interactive 3D Section */}
-      <section className="py-20 bg-gradient-to-br from-tech-blue/5 to-innovation-purple/5 dark:from-tech-blue/10 dark:to-innovation-purple/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="text-center space-y-4 mb-16 animate-fadeIn">
-            <h2 className="text-4xl lg:text-5xl font-bold font-display" data-testid="spline-title">
-              Experience Innovation
-            </h2>
-            <p className="text-xl text-professional-grey dark:text-gray-300 max-w-3xl mx-auto" data-testid="spline-description">
-              Interact with our 3D showcase to explore the cutting-edge technology we bring to every project.
-            </p>
-          </div>
-          
-          <div className="relative h-[600px] rounded-2xl overflow-hidden bg-white dark:bg-gray-900 shadow-2xl" data-testid="spline-container">
-            <Spline
-              scene="https://prod.spline.design/9mHsL1CzLn9iXY83/scene.splinecode"
-              style={{ width: '100%', height: '100%' }}
-            />
-          </div>
+      <section className="min-h-screen pt-16 relative" data-testid="hero-section">
+        <div className="w-full h-full">
+          <Spline
+            scene="https://prod.spline.design/O4KW31BYKC1a4M1N/scene.splinecode"
+            style={{ width: '100%', height: '100vh' }}
+          />
         </div>
       </section>
 
