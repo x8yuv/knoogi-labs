@@ -17,7 +17,7 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-gray-800/20" style={{ backgroundColor: 'rgba(7, 21, 36, 0.9)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-3" data-testid="logo-link">
@@ -66,7 +66,7 @@ export function Navigation() {
         
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-gray-900 border-t border-gray-800">
+          <div className="md:hidden border-t border-gray-800" style={{ backgroundColor: '#071524' }}>
             <div className="px-6 py-4 space-y-4">
               {navLinks.map(({ href, label }) => (
                 <Link key={href} href={href} onClick={() => setIsOpen(false)}>
