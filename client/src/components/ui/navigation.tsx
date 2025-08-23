@@ -23,7 +23,7 @@ export function Navigation() {
           <Link href="/" className="flex items-center space-x-3" data-testid="logo-link">
             <div className="w-10 h-10" data-testid="logo-spline">
               <Spline
-                scene="https://prod.spline.design/7GXY7lFTsynTHZQl/scene.splinecode"
+                scene="https://prod.spline.design/RNk4jVrxIVB4j1XT/scene.splinecode"
                 style={{ width: '100%', height: '100%' }}
               />
             </div>
