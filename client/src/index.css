@@ -174,24 +174,17 @@
   [data-testid="contact-hero-section"]::before {
     content: '';
     position: absolute;
-    top: 16px;
+    top: 80px;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 80px;
     background: var(--background);
-    z-index: 999;
+    z-index: 2;
     pointer-events: none;
   }
   
   [data-testid="contact-hero-section"] {
     overflow: hidden;
     position: relative;
-  }
-  
-  /* Alternative approach - crop the Spline scene */
-  [data-testid="hero-section"] > div,
-  [data-testid="contact-hero-section"] > div {
-    margin-top: -50px !important;
-    height: calc(100vh + 50px) !important;
   }
 }
