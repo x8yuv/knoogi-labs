@@ -1,0 +1,99 @@
+import { Link } from "wouter";
+import { MapPin } from "lucide-react";
+
+export function Footer() {
+  return (
+    <footer className="bg-rich-black text-white py-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-12">
+          <div className="space-y-6">
+            <div className="flex items-center space-x-2">
+              <div className="w-8 h-8 gradient-tech rounded-lg flex items-center justify-center">
+                <MapPin className="text-white text-sm" />
+              </div>
+              <span className="text-xl font-bold font-display">Knoogi Labs</span>
+            </div>
+            <p className="text-gray-400 leading-relaxed">
+              Modern development solutions from the heart of Alberta, Canada. Building the future with innovative technology.
+            </p>
+          </div>
+          
+          <div>
+            <h4 className="font-semibold mb-4 font-display">Services</h4>
+            <div className="space-y-2">
+              <Link href="/services">
+                <span className="block text-gray-400 hover:text-white transition-colors" data-testid="footer-ai-link">
+                  AI Development
+                </span>
+              </Link>
+              <Link href="/services">
+                <span className="block text-gray-400 hover:text-white transition-colors" data-testid="footer-app-link">
+                  App Development
+                </span>
+              </Link>
+              <Link href="/services">
+                <span className="block text-gray-400 hover:text-white transition-colors" data-testid="footer-marketing-link">
+                  Digital Marketing
+                </span>
+              </Link>
+              <Link href="/services">
+                <span className="block text-gray-400 hover:text-white transition-colors" data-testid="footer-media-link">
+                  Media Creation
+                </span>
+              </Link>
+              <Link href="/services">
+                <span className="block text-gray-400 hover:text-white transition-colors" data-testid="footer-custom-link">
+                  Custom Development
+                </span>
+              </Link>
+            </div>
+          </div>
+          
+          <div>
+            <h4 className="font-semibold mb-4 font-display">Company</h4>
+            <div className="space-y-2">
+              <Link href="/about">
+                <span className="block text-gray-400 hover:text-white transition-colors" data-testid="footer-about-link">
+                  About Us
+                </span>
+              </Link>
+              <span className="block text-gray-400 hover:text-white transition-colors cursor-pointer" data-testid="footer-team-link">
+                Our Team
+              </span>
+              <span className="block text-gray-400 hover:text-white transition-colors cursor-pointer" data-testid="footer-careers-link">
+                Careers
+              </span>
+              <Link href="/contact">
+                <span className="block text-gray-400 hover:text-white transition-colors" data-testid="footer-contact-link">
+                  Contact
+                </span>
+              </Link>
+              <span className="block text-gray-400 hover:text-white transition-colors cursor-pointer" data-testid="footer-privacy-link">
+                Privacy Policy
+              </span>
+            </div>
+          </div>
+          
+          <div>
+            <h4 className="font-semibold mb-4 font-display">Contact</h4>
+            <div className="space-y-2 text-gray-400">
+              <p data-testid="footer-address">Calgary, Alberta, Canada</p>
+              <p data-testid="footer-phone">+1 (403) 555-0123</p>
+              <p data-testid="footer-email">hello@knoogilabs.com</p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-400 text-sm" data-testid="footer-copyright">
+            © 2024 Knoogi Labs. All rights reserved.
+          </p>
+          <div className="flex items-center space-x-2 mt-4 md:mt-0">
+            <MapPin className="text-success-green w-4 h-4" />
+            <span className="text-sm text-gray-400" data-testid="footer-canadian">Proudly Canadian</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

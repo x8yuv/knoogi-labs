@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(26 9% 10%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(26 9% 10%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(26 9% 10%);
+  --primary: hsl(203 88% 53%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(256 72% 57%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(210 16% 98%);
+  --muted-foreground: hsl(215 16% 47%);
+  --accent: hsl(158 76% 40%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(214 32% 91%);
+  --input: hsl(214 32% 91%);
+  --ring: hsl(203 88% 53%);
+  --chart-1: hsl(203 88% 53%);
+  --chart-2: hsl(158 76% 40%);
+  --chart-3: hsl(42 93% 56%);
+  --chart-4: hsl(147 79% 42%);
+  --chart-5: hsl(341 75% 51%);
+  --sidebar: hsl(0 0% 100%);
+  --sidebar-foreground: hsl(26 9% 10%);
+  --sidebar-primary: hsl(203 88% 53%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(210 16% 98%);
+  --sidebar-accent-foreground: hsl(26 9% 10%);
+  --sidebar-border: hsl(214 32% 91%);
+  --sidebar-ring: hsl(203 88% 53%);
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Poppins', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.75rem;
+  
+  /* Knoogi Labs Custom Colors */
+  --tech-blue: hsl(203 88% 53%);
+  --innovation-purple: hsl(256 72% 57%);
+  --success-green: hsl(158 76% 40%);
+  --clean-bg: hsl(210 16% 98%);
+  --rich-black: hsl(26 9% 10%);
+  --professional-grey: hsl(215 16% 47%);
+}
+
+.dark {
+  --background: hsl(26 9% 5%);
+  --foreground: hsl(0 0% 95%);
+  --card: hsl(26 9% 8%);
+  --card-foreground: hsl(0 0% 95%);
+  --popover: hsl(26 9% 5%);
+  --popover-foreground: hsl(0 0% 95%);
+  --primary: hsl(203 88% 53%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(256 72% 57%);
+  --secondary-foreground: hsl(0 0% 100%);
+  --muted: hsl(26 9% 12%);
+  --muted-foreground: hsl(215 16% 65%);
+  --accent: hsl(158 76% 40%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(26 9% 15%);
+  --input: hsl(26 9% 15%);
+  --ring: hsl(203 88% 53%);
+  --chart-1: hsl(203 88% 53%);
+  --chart-2: hsl(158 76% 40%);
+  --chart-3: hsl(42 93% 56%);
+  --chart-4: hsl(147 79% 42%);
+  --chart-5: hsl(341 75% 51%);
+  --sidebar: hsl(26 9% 8%);
+  --sidebar-foreground: hsl(0 0% 95%);
+  --sidebar-primary: hsl(203 88% 53%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(26 9% 12%);
+  --sidebar-accent-foreground: hsl(0 0% 95%);
+  --sidebar-border: hsl(26 9% 15%);
+  --sidebar-ring: hsl(203 88% 53%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold;
+  }
+}
+
+@layer utilities {
+  .gradient-tech {
+    background: linear-gradient(135deg, var(--tech-blue), var(--innovation-purple));
+  }
+  
+  .gradient-overlay {
+    background: linear-gradient(135deg, rgba(0, 112, 243, 0.1), rgba(124, 58, 237, 0.1));
+  }
+  
+  .text-tech-blue {
+    color: var(--tech-blue);
+  }
+  
+  .text-innovation-purple {
+    color: var(--innovation-purple);
+  }
+  
+  .text-success-green {
+    color: var(--success-green);
+  }
+  
+  .text-professional-grey {
+    color: var(--professional-grey);
+  }
+  
+  .bg-tech-blue {
+    background-color: var(--tech-blue);
+  }
+  
+  .bg-innovation-purple {
+    background-color: var(--innovation-purple);
+  }
+  
+  .bg-success-green {
+    background-color: var(--success-green);
+  }
+  
+  .bg-clean-bg {
+    background-color: var(--clean-bg);
+  }
+  
+  .border-tech-blue {
+    border-color: var(--tech-blue);
+  }
+  
+  .hover\:bg-tech-blue:hover {
+    background-color: var(--tech-blue);
+  }
+  
+  .hover\:text-tech-blue:hover {
+    color: var(--tech-blue);
+  }
+}
