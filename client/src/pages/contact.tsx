@@ -147,10 +147,79 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="min-h-screen pt-16 relative" data-testid="contact-hero-section">
         <div className="w-full h-full">
-          <Spline
-            scene="https://prod.spline.design/GWAOdImzPXQDq9WD/scene.splinecode"
-            style={{ width: '100%', height: '100vh' }}
-          />
+          {/* Desktop Spline */}
+          <div className="hidden md:block w-full h-full">
+            <Spline
+              scene="https://prod.spline.design/GWAOdImzPXQDq9WD/scene.splinecode"
+              style={{ width: '100%', height: '100vh' }}
+            />
+          </div>
+          
+          {/* Mobile Hero */}
+          <div className="md:hidden w-full min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 relative overflow-hidden">
+            {/* Animated background elements */}
+            <div className="absolute inset-0">
+              <div className="absolute top-10 right-12 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
+              <div className="absolute bottom-20 left-8 w-80 h-80 bg-purple-400/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1.5s'}}></div>
+              <div className="absolute top-1/3 left-1/3 w-48 h-48 bg-pink-400/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '3s'}}></div>
+            </div>
+            
+            {/* Floating geometric shapes */}
+            <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute top-24 left-8 w-12 h-12 bg-white/10 rotate-45 animate-bounce" style={{animationDelay: '0.5s'}}></div>
+              <div className="absolute top-1/2 right-12 w-8 h-8 bg-blue-300/20 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
+              <div className="absolute bottom-32 left-1/4 w-6 h-6 bg-purple-300/20 rotate-12 animate-bounce" style={{animationDelay: '1.8s'}}></div>
+            </div>
+            
+            {/* Content */}
+            <div className="relative z-10 flex items-center justify-center min-h-screen px-6">
+              <div className="text-center max-w-md mx-auto">
+                {/* Contact Icon */}
+                <div className="mb-8 relative">
+                  <div className="w-28 h-28 mx-auto bg-gradient-to-br from-blue-400 to-purple-400 rounded-full shadow-2xl flex items-center justify-center mb-6 animate-pulse">
+                    <Mail className="w-14 h-14 text-white" />
+                  </div>
+                  <div className="absolute -top-1 -right-1 w-8 h-8 bg-pink-400 rounded-full animate-ping"></div>
+                  <div className="absolute -bottom-2 -left-2 w-6 h-6 bg-blue-400 rounded-full animate-ping" style={{animationDelay: '1s'}}></div>
+                </div>
+                
+                {/* Main heading */}
+                <h1 className="text-4xl font-bold font-display mb-4 text-white leading-tight">
+                  Let's{" "}
+                  <span className="bg-gradient-to-r from-blue-300 to-purple-300 bg-clip-text text-transparent">
+                    Connect
+                  </span>
+                </h1>
+                
+                {/* Subtitle */}
+                <p className="text-lg text-gray-200 mb-8 leading-relaxed">
+                  Ready to bring your ideas to life? Get in touch with our team of experts and let's create something amazing together.
+                </p>
+                
+                {/* Contact stats */}
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                    <div className="text-2xl font-bold text-white">24h</div>
+                    <div className="text-sm text-gray-300">Response Time</div>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                    <div className="text-2xl font-bold text-white">100+</div>
+                    <div className="text-sm text-gray-300">Projects Delivered</div>
+                  </div>
+                </div>
+                
+                {/* Scroll indicator */}
+                <div className="mt-8 animate-bounce">
+                  <div className="text-center">
+                    <p className="text-sm text-gray-300 mb-2">Start Your Project</p>
+                    <svg className="w-6 h-6 text-white/60 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
