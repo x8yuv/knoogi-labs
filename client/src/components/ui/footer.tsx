@@ -61,31 +61,31 @@ export function Footer() {
             <div className="space-y-2">
               <Link 
                 href="/about"
-                className="block text-gray-300 hover:text-white transition-colors" 
+                className="block text-gray-300 md:hover:text-white transition-colors touch-manipulation" 
                 data-testid="footer-about-link"
               >
                 About Us
               </Link>
-              <span className="block text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-team-link">
+              <span className="block text-gray-300 md:hover:text-white transition-colors cursor-pointer touch-manipulation" data-testid="footer-team-link">
                 Our Team
               </span>
               <Link 
                 href="/careers"
-                className="block text-gray-300 hover:text-white transition-colors" 
+                className="block text-gray-300 md:hover:text-white transition-colors touch-manipulation" 
                 data-testid="footer-careers-link"
               >
                 Careers
               </Link>
               <Link 
                 href="/contact"
-                className="block text-gray-300 hover:text-white transition-colors" 
+                className="block text-gray-300 md:hover:text-white transition-colors touch-manipulation" 
                 data-testid="footer-contact-link"
               >
                 Contact
               </Link>
               <Link 
                 href="/privacy-policy"
-                className="block text-gray-300 hover:text-white transition-colors" 
+                className="block text-gray-300 md:hover:text-white transition-colors touch-manipulation" 
                 data-testid="footer-privacy-link"
               >
                 Privacy Policy

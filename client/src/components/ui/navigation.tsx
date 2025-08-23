@@ -69,17 +69,18 @@ export function Navigation() {
           <div className="md:hidden border-t border-gray-800" style={{ backgroundColor: '#071524' }}>
             <div className="px-6 py-4 space-y-4">
               {navLinks.map(({ href, label }) => (
-                <Link key={href} href={href} onClick={() => setIsOpen(false)}>
-                  <span 
-                    className={`block transition-colors ${
-                      location === href 
-                        ? "text-blue-400 font-medium" 
-                        : "text-gray-300 hover:text-blue-400"
-                    }`}
-                    data-testid={`mobile-nav-${label.toLowerCase()}`}
-                  >
-                    {label}
-                  </span>
+                <Link 
+                  key={href} 
+                  href={href} 
+                  onClick={() => setIsOpen(false)}
+                  className={`block py-2 transition-colors ${
+                    location === href 
+                      ? "text-blue-400 font-medium" 
+                      : "text-gray-300 active:text-blue-400"
+                  }`}
+                  data-testid={`mobile-nav-${label.toLowerCase()}`}
+                >
+                  {label}
                 </Link>
               ))}
             </div>
