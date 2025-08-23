@@ -59,30 +59,36 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4 font-display">Company</h4>
             <div className="space-y-2">
-              <Link href="/about">
-                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-about-link">
-                  About Us
-                </span>
+              <Link 
+                href="/about"
+                className="block text-gray-300 hover:text-white transition-colors" 
+                data-testid="footer-about-link"
+              >
+                About Us
               </Link>
-              <div>
-                <span className="block text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-team-link">
-                  Our Team
-                </span>
-              </div>
-              <Link href="/careers">
-                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-careers-link">
-                  Careers
-                </span>
+              <span className="block text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-team-link">
+                Our Team
+              </span>
+              <Link 
+                href="/careers"
+                className="block text-gray-300 hover:text-white transition-colors" 
+                data-testid="footer-careers-link"
+              >
+                Careers
               </Link>
-              <Link href="/contact">
-                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-contact-link">
-                  Contact
-                </span>
+              <Link 
+                href="/contact"
+                className="block text-gray-300 hover:text-white transition-colors" 
+                data-testid="footer-contact-link"
+              >
+                Contact
               </Link>
-              <Link href="/privacy-policy">
-                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-privacy-link">
-                  Privacy Policy
-                </span>
+              <Link 
+                href="/privacy-policy"
+                className="block text-gray-300 hover:text-white transition-colors" 
+                data-testid="footer-privacy-link"
+              >
+                Privacy Policy
               </Link>
             </div>
           </div>
