@@ -14,22 +14,14 @@ export default function About() {
       role: "Co-Founder & CEO",
       image: deepikaPhoto,
       description: "Deepika brings over 8 years of experience in technology leadership and business strategy. She specializes in AI implementation and digital transformation, helping businesses leverage cutting-edge technology for growth.",
-      color: "tech-blue",
-      socials: [
-        { icon: Linkedin, href: "#" },
-        { icon: Twitter, href: "#" }
-      ]
+      color: "tech-blue"
     },
     {
       name: "Yuvraj Manchanda",
       role: "Co-Founder & CTO",
       image: yuvrajPhoto,
       description: "Yuvraj is a full-stack developer and technology architect with expertise in scalable systems and modern development frameworks. He leads our technical vision and ensures delivery of high-quality solutions.",
-      color: "innovation-purple",
-      socials: [
-        { icon: Linkedin, href: "#" },
-        { icon: Github, href: "#" }
-      ]
+      color: "innovation-purple"
     }
   ];
 
@@ -181,21 +173,6 @@ export default function About() {
                   <p className="text-professional-grey leading-relaxed" data-testid={`founder-description-${index}`}>
                     {founder.description}
                   </p>
-                  <div className="flex justify-center space-x-4">
-                    {founder.socials.map((social, socialIndex) => {
-                      const SocialIcon = social.icon;
-                      return (
-                        <a 
-                          key={socialIndex} 
-                          href={social.href} 
-                          className={`text-professional-grey hover:text-${founder.color} transition-colors`}
-                          data-testid={`founder-social-${index}-${socialIndex}`}
-                        >
-                          <SocialIcon className="w-5 h-5" />
-                        </a>
-                      );
-                    })}
-                  </div>
                 </CardContent>
               </Card>
             ))}
