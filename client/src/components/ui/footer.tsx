@@ -4,7 +4,7 @@ import logoSvg from "@/assets/knoogi-labs-logo.svg";
 
 export function Footer() {
   return (
-    <footer className="bg-rich-black dark:bg-gray-900 text-white py-16">
+    <footer className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="space-y-6">
@@ -20,7 +20,7 @@ export function Footer() {
                 <span style={{ fontWeight: 800 }}> LABS</span>
               </span>
             </div>
-            <p className="text-gray-400 dark:text-gray-300 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed">
               Modern development solutions from the heart of Alberta, Canada. Building the future with innovative technology.
             </p>
           </div>
@@ -29,27 +29,27 @@ export function Footer() {
             <h4 className="font-semibold mb-4 font-display">Services</h4>
             <div className="space-y-2">
               <Link href="/services">
-                <span className="block text-gray-400 dark:text-gray-300 hover:text-white transition-colors" data-testid="footer-ai-link">
+                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-ai-link">
                   AI Development
                 </span>
               </Link>
               <Link href="/services">
-                <span className="block text-gray-400 dark:text-gray-300 hover:text-white transition-colors" data-testid="footer-app-link">
+                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-app-link">
                   App Development
                 </span>
               </Link>
               <Link href="/services">
-                <span className="block text-gray-400 dark:text-gray-300 hover:text-white transition-colors" data-testid="footer-marketing-link">
+                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-marketing-link">
                   Digital Marketing
                 </span>
               </Link>
               <Link href="/services">
-                <span className="block text-gray-400 dark:text-gray-300 hover:text-white transition-colors" data-testid="footer-media-link">
+                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-media-link">
                   Media Creation
                 </span>
               </Link>
               <Link href="/services">
-                <span className="block text-gray-400 dark:text-gray-300 hover:text-white transition-colors" data-testid="footer-custom-link">
+                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-custom-link">
                   Custom Development
                 </span>
               </Link>
@@ -60,22 +60,22 @@ export function Footer() {
             <h4 className="font-semibold mb-4 font-display">Company</h4>
             <div className="space-y-2">
               <Link href="/about">
-                <span className="block text-gray-400 dark:text-gray-300 hover:text-white transition-colors" data-testid="footer-about-link">
+                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-about-link">
                   About Us
                 </span>
               </Link>
-              <span className="block text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-team-link">
+              <span className="block text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-team-link">
                 Our Team
               </span>
-              <span className="block text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-careers-link">
+              <span className="block text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-careers-link">
                 Careers
               </span>
               <Link href="/contact">
-                <span className="block text-gray-400 dark:text-gray-300 hover:text-white transition-colors" data-testid="footer-contact-link">
+                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-contact-link">
                   Contact
                 </span>
               </Link>
-              <span className="block text-gray-400 dark:text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-privacy-link">
+              <span className="block text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-privacy-link">
                 Privacy Policy
               </span>
             </div>
@@ -83,7 +83,7 @@ export function Footer() {
           
           <div>
             <h4 className="font-semibold mb-4 font-display">Contact</h4>
-            <div className="space-y-2 text-gray-400 dark:text-gray-300">
+            <div className="space-y-2 text-gray-300">
               <p data-testid="footer-address">Calgary, Alberta, Canada</p>
               <p data-testid="footer-phone">+1 (403) 555-0123</p>
               <p data-testid="footer-email">hello@knoogilabs.com</p>
@@ -91,13 +91,13 @@ export function Footer() {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 dark:text-gray-300 text-sm" data-testid="footer-copyright">
+        <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-gray-300 text-sm" data-testid="footer-copyright">
             © 2024 Knoogi Labs. All rights reserved.
           </p>
           <div className="flex items-center space-x-2 mt-4 md:mt-0">
             <MapPin className="text-success-green w-4 h-4" />
-            <span className="text-sm text-gray-400 dark:text-gray-300" data-testid="footer-canadian">Proudly Canadian</span>
+            <span className="text-sm text-gray-300" data-testid="footer-canadian">Proudly Canadian</span>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ export function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200/20 dark:border-gray-800/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/90 backdrop-blur-md border-b border-gray-800/20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-3" data-testid="logo-link">
@@ -27,7 +27,7 @@ export function Navigation() {
               className="w-10 h-10"
               data-testid="logo-image"
             />
-            <span className="text-2xl text-rich-black dark:text-white font-brand uppercase">
+            <span className="text-2xl text-white font-brand uppercase">
               <span style={{ fontWeight: 900 }}>KNOOGI</span>
               <span style={{ fontWeight: 800 }}> LABS</span>
             </span>
@@ -39,8 +39,8 @@ export function Navigation() {
                 <span 
                   className={`nav-link transition-colors ${
                     location === href 
-                      ? "text-tech-blue dark:text-blue-400 font-medium" 
-                      : "text-professional-grey dark:text-gray-300 hover:text-tech-blue dark:hover:text-blue-400"
+                      ? "text-blue-400 font-medium" 
+                      : "text-gray-300 hover:text-blue-400"
                   }`}
                   data-testid={`nav-${label.toLowerCase()}`}
                 >
@@ -66,15 +66,15 @@ export function Navigation() {
         
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+          <div className="md:hidden bg-gray-900 border-t border-gray-800">
             <div className="px-6 py-4 space-y-4">
               {navLinks.map(({ href, label }) => (
                 <Link key={href} href={href} onClick={() => setIsOpen(false)}>
                   <span 
                     className={`block transition-colors ${
                       location === href 
-                        ? "text-tech-blue dark:text-blue-400 font-medium" 
-                        : "text-professional-grey dark:text-gray-300 hover:text-tech-blue dark:hover:text-blue-400"
+                        ? "text-blue-400 font-medium" 
+                        : "text-gray-300 hover:text-blue-400"
                     }`}
                     data-testid={`mobile-nav-${label.toLowerCase()}`}
                   >
