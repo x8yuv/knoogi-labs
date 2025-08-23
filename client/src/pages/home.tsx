@@ -3,6 +3,7 @@ import { Footer } from "@/components/ui/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
+import Spline from '@splinetool/react-spline';
 import { 
   Brain, 
   Smartphone, 
@@ -85,72 +86,12 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="min-h-screen pt-16 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-blue-900 relative overflow-hidden" data-testid="hero-section">
-        {/* Animated background cubes */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="cube-float absolute top-20 right-20 w-16 h-16 bg-tech-blue rounded-lg animate-bounce" style={{ animationDelay: '0s', animationDuration: '3s' }}></div>
-          <div className="cube-float absolute top-40 right-40 w-12 h-12 bg-innovation-purple rounded-lg animate-bounce" style={{ animationDelay: '1s', animationDuration: '4s' }}></div>
-          <div className="cube-float absolute top-60 right-60 w-20 h-20 bg-success-green rounded-lg animate-bounce" style={{ animationDelay: '2s', animationDuration: '5s' }}></div>
-          <div className="cube-float absolute bottom-40 right-32 w-14 h-14 bg-tech-blue rounded-lg animate-bounce" style={{ animationDelay: '1.5s', animationDuration: '3.5s' }}></div>
-          <div className="cube-float absolute bottom-20 right-16 w-18 h-18 bg-innovation-purple rounded-lg animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '4.5s' }}></div>
-        </div>
-        
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 h-full flex items-center">
-          <div className="max-w-3xl space-y-8 z-10 relative">
-            <div className="space-y-6">
-              <div className="flex items-center space-x-2 text-success-green">
-                <CheckCircle className="w-4 h-4" />
-                <span className="text-sm font-medium text-rich-black dark:text-white" data-testid="hero-location">From Alberta, Canada</span>
-              </div>
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight font-display text-rich-black dark:text-white">
-                Innovation Meets{" "}
-                <span className="bg-gradient-to-r from-tech-blue to-innovation-purple bg-clip-text text-transparent">
-                  Excellence
-                </span>
-              </h1>
-              <p className="text-xl lg:text-2xl text-professional-grey dark:text-gray-300 leading-relaxed">
-                Knoogi Labs delivers cutting-edge technology solutions from Alberta, Canada. 
-                We specialize in AI development, custom applications, and digital transformation 
-                that drives real business results.
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/contact">
-                <Button 
-                  size="lg" 
-                  className="bg-tech-blue text-white hover:bg-blue-600 font-semibold text-lg px-8 py-4"
-                  data-testid="hero-get-started"
-                >
-                  Start Your Project
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-              </Link>
-              <Link href="/services">
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="font-semibold border-2 border-tech-blue text-tech-blue hover:bg-tech-blue hover:text-white text-lg px-8 py-4"
-                  data-testid="hero-view-services"
-                >
-                  View Our Services
-                </Button>
-              </Link>
-            </div>
-            
-            <div className="flex items-center space-x-8 pt-8">
-              {stats.map(({ value, label }, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-3xl font-bold text-rich-black dark:text-white font-display" data-testid={`stat-value-${index}`}>
-                    {value}
-                  </div>
-                  <div className="text-sm text-professional-grey dark:text-gray-300" data-testid={`stat-label-${index}`}>
-                    {label}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+      <section className="min-h-screen pt-16 relative" data-testid="hero-section">
+        <div className="w-full h-full">
+          <Spline
+            scene="https://prod.spline.design/IuKjf7lBmK2UTc6W/scene.splinecode"
+            style={{ width: '100%', height: '100vh' }}
+          />
         </div>
       </section>
 
