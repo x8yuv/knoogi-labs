@@ -51,7 +51,7 @@ export default function Careers() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-16 py-20 bg-gradient-to-br from-tech-blue/5 to-innovation-purple/5" data-testid="careers-hero">
+      <section className="pt-24 py-20 bg-gradient-to-br from-tech-blue/5 to-innovation-purple/5" data-testid="careers-hero">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
             <h1 className="text-4xl lg:text-5xl font-bold font-display" data-testid="careers-title">
