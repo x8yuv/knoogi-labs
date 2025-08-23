@@ -167,22 +167,31 @@
   /* Hide the navigation header in Spline scenes */
   [data-testid="hero-section"] {
     overflow: hidden;
+    position: relative;
   }
   
   [data-testid="hero-section"]::before,
   [data-testid="contact-hero-section"]::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 16px;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 100px;
     background: var(--background);
-    z-index: 5;
+    z-index: 999;
     pointer-events: none;
   }
   
   [data-testid="contact-hero-section"] {
     overflow: hidden;
+    position: relative;
+  }
+  
+  /* Alternative approach - crop the Spline scene */
+  [data-testid="hero-section"] > div,
+  [data-testid="contact-hero-section"] > div {
+    margin-top: -50px !important;
+    height: calc(100vh + 50px) !important;
   }
 }
