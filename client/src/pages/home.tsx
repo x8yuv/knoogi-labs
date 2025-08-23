@@ -93,15 +93,15 @@ export default function Home() {
               <div className="space-y-6">
                 <div className="flex items-center space-x-2 text-success-green">
                   <CheckCircle className="w-4 h-4" />
-                  <span className="text-sm font-medium text-white" data-testid="hero-location">From Alberta, Canada</span>
+                  <span className="text-sm font-medium text-rich-black dark:text-white" data-testid="hero-location">From Alberta, Canada</span>
                 </div>
-                <h1 className="text-5xl lg:text-6xl font-bold leading-tight font-display text-white">
+                <h1 className="text-5xl lg:text-6xl font-bold leading-tight font-display text-rich-black dark:text-white">
                   Modern Development{" "}
                   <span className="bg-gradient-to-r from-success-green to-tech-blue bg-clip-text text-transparent">
                     Solutions
                   </span>
                 </h1>
-                <p className="text-xl text-gray-300 leading-relaxed" data-testid="hero-description">
+                <p className="text-xl text-professional-grey dark:text-gray-300 leading-relaxed" data-testid="hero-description">
                   Knoogi Labs specializes in AI, app development, digital marketing, media creation, and custom development services. We build the future, one innovation at a time.
                 </p>
               </div>
@@ -132,10 +132,10 @@ export default function Home() {
               <div className="flex items-center space-x-8 pt-8">
                 {stats.map(({ value, label }, index) => (
                   <div key={index} className="text-center">
-                    <div className="text-2xl font-bold text-white font-display" data-testid={`stat-value-${index}`}>
+                    <div className="text-2xl font-bold text-rich-black dark:text-white font-display" data-testid={`stat-value-${index}`}>
                       {value}
                     </div>
-                    <div className="text-sm text-gray-300" data-testid={`stat-label-${index}`}>
+                    <div className="text-sm text-professional-grey dark:text-gray-300" data-testid={`stat-label-${index}`}>
                       {label}
                     </div>
                   </div>
@@ -151,10 +151,10 @@ export default function Home() {
                 data-testid="hero-image"
               />
               <Card className="absolute -bottom-6 -right-6 shadow-lg border-0">
-                <CardContent className="p-6 bg-gray-900/80 border-gray-700">
+                <CardContent className="p-6 bg-white/90 dark:bg-gray-900/80 border-gray-200 dark:border-gray-700">
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-success-green rounded-full animate-pulse"></div>
-                    <span className="text-sm font-medium text-white" data-testid="hero-status">Active Development</span>
+                    <span className="text-sm font-medium text-rich-black dark:text-white" data-testid="hero-status">Active Development</span>
                   </div>
                 </CardContent>
               </Card>
