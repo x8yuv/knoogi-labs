@@ -7,7 +7,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="space-y-6">
-            <span className="text-xl font-bold font-brand">Knoogi Labs</span>
+            <span className="text-xl font-bold font-brand uppercase" style={{ fontWeight: 700 }}>KNOOGI LABS</span>
             <p className="text-gray-400 leading-relaxed">
               Modern development solutions from the heart of Alberta, Canada. Building the future with innovative technology.
             </p>
