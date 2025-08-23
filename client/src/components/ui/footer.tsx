@@ -7,12 +7,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="space-y-6">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 gradient-tech rounded-lg flex items-center justify-center">
-                <MapPin className="text-white text-sm" />
-              </div>
-              <span className="text-xl font-bold font-display">Knoogi Labs</span>
-            </div>
+            <span className="text-xl font-bold font-brand">Knoogi Labs</span>
             <p className="text-gray-400 leading-relaxed">
               Modern development solutions from the heart of Alberta, Canada. Building the future with innovative technology.
             </p>

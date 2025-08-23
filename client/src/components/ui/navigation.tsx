@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "./button";
-import { Menu, X, MapPin } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +18,8 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200/20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center space-x-2" data-testid="logo-link">
-            <div className="w-8 h-8 gradient-tech rounded-lg flex items-center justify-center">
-              <MapPin className="text-white text-sm" />
-            </div>
-            <span className="text-xl font-bold text-rich-black font-display">Knoogi Labs</span>
+          <Link href="/" className="flex items-center" data-testid="logo-link">
+            <span className="text-xl font-bold text-rich-black font-brand">Knoogi Labs</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
