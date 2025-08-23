@@ -19,7 +19,13 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200/20 dark:border-gray-800/20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center" data-testid="logo-link">
+          <Link href="/" className="flex items-center space-x-3" data-testid="logo-link">
+            <img 
+              src="/knoogi-labs-logo.svg" 
+              alt="Knoogi Labs Logo" 
+              className="w-8 h-8"
+              data-testid="logo-image"
+            />
             <span className="text-2xl text-rich-black dark:text-white font-brand uppercase">
               <span style={{ fontWeight: 900 }}>KNOOGI</span>
               <span style={{ fontWeight: 800 }}> LABS</span>

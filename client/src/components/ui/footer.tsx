@@ -7,10 +7,18 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="space-y-6">
-            <span className="text-2xl font-brand uppercase text-white">
-              <span style={{ fontWeight: 900 }}>KNOOGI</span>
-              <span style={{ fontWeight: 800 }}> LABS</span>
-            </span>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/knoogi-labs-logo.svg" 
+                alt="Knoogi Labs Logo" 
+                className="w-8 h-8"
+                data-testid="footer-logo-image"
+              />
+              <span className="text-2xl font-brand uppercase text-white">
+                <span style={{ fontWeight: 900 }}>KNOOGI</span>
+                <span style={{ fontWeight: 800 }}> LABS</span>
+              </span>
+            </div>
             <p className="text-gray-400 dark:text-gray-300 leading-relaxed">
               Modern development solutions from the heart of Alberta, Canada. Building the future with innovative technology.
             </p>
