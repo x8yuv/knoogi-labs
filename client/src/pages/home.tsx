@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import VenomBeam from "@/components/ui/venom-beam";
+import Spline from '@splinetool/react-spline';
 import { 
   Brain, 
   Smartphone, 
@@ -162,6 +163,27 @@ export default function Home() {
           </div>
         </div>
       </VenomBeam>
+
+      {/* Interactive 3D Section */}
+      <section className="py-20 bg-gradient-to-br from-tech-blue/5 to-innovation-purple/5 dark:from-tech-blue/10 dark:to-innovation-purple/10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16 animate-fadeIn">
+            <h2 className="text-4xl lg:text-5xl font-bold font-display" data-testid="spline-title">
+              Experience Innovation
+            </h2>
+            <p className="text-xl text-professional-grey dark:text-gray-300 max-w-3xl mx-auto" data-testid="spline-description">
+              Interact with our 3D showcase to explore the cutting-edge technology we bring to every project.
+            </p>
+          </div>
+          
+          <div className="relative h-[600px] rounded-2xl overflow-hidden bg-white dark:bg-gray-900 shadow-2xl" data-testid="spline-container">
+            <Spline
+              scene="https://prod.spline.design/9mHsL1CzLn9iXY83/scene.splinecode"
+              style={{ width: '100%', height: '100%' }}
+            />
+          </div>
+        </div>
+      </section>
 
       {/* Services Preview Section */}
       <section className="py-20 bg-white">
