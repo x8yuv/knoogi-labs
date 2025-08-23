@@ -94,50 +94,24 @@ export default function Home() {
       {/* Hero Section */}
       <section className="min-h-screen pt-16 relative overflow-hidden" data-testid="hero-section">
         <div className="w-full h-full">
-          {/* Desktop Spline */}
-          <div className="hidden md:block w-full h-full">
-            <Spline
-              scene="https://prod.spline.design/O4KW31BYKC1a4M1N/scene.splinecode"
-              style={{ 
-                width: '100%', 
-                height: '100vh',
-                minHeight: '100vh'
-              }}
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <Spline
+            scene="https://prod.spline.design/O4KW31BYKC1a4M1N/scene.splinecode"
+            style={{ 
+              width: '100%', 
+              height: '100vh',
+              minHeight: '100vh'
+            }}
+            className="w-full h-full"
+          />
           
-          {/* Mobile Hero */}
-          <div className="md:hidden w-full h-full bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center">
-            <div className="text-center px-6 max-w-sm mx-4">
-              <div className="mb-8">
-                <div className="w-20 h-20 bg-gradient-to-br from-tech-blue to-innovation-purple rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                  <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
-                </div>
-              </div>
-              <h1 className="text-4xl font-bold font-display mb-4 text-rich-black">
-                Welcome to{" "}
-                <span className="bg-gradient-to-r from-tech-blue to-innovation-purple bg-clip-text text-transparent">
-                  Knoogi Labs
-                </span>
-              </h1>
-              <p className="text-lg text-professional-grey mb-8 leading-relaxed">
-                Modern development solutions from the heart of Alberta, Canada. Building the future with innovative technology.
-              </p>
-              <div className="space-y-4">
-                <Link href="/services">
-                  <Button className="bg-tech-blue text-white hover:bg-blue-600 font-semibold w-full py-3">
-                    Explore Our Services
-                  </Button>
-                </Link>
-                <Link href="/contact">
-                  <Button variant="outline" className="w-full py-3 border-tech-blue text-tech-blue hover:bg-tech-blue hover:text-white">
-                    Get In Touch
-                  </Button>
-                </Link>
-              </div>
+          {/* Mobile navigation overlay - positioned at bottom */}
+          <div className="absolute bottom-8 left-0 right-0 md:hidden flex justify-center pointer-events-none">
+            <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg pointer-events-auto">
+              <Link href="/services">
+                <Button size="sm" className="bg-tech-blue text-white hover:bg-blue-600 font-semibold rounded-full">
+                  Explore Services
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
