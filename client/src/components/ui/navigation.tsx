@@ -25,6 +25,11 @@ export function Navigation() {
               src={logoSvg} 
               alt="Knoogi Labs Logo" 
               className="w-10 h-10"
+              style={{ 
+                backgroundColor: 'transparent',
+                mixBlendMode: 'screen',
+                filter: 'brightness(1.2)'
+              }}
               data-testid="logo-image"
             />
             <span className="text-2xl text-white font-brand uppercase">
