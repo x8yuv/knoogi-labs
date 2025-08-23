@@ -96,24 +96,37 @@ export default function Home() {
         <div className="w-full h-full">
           <Spline
             scene="https://prod.spline.design/O4KW31BYKC1a4M1N/scene.splinecode"
-            style={{ width: '100%', height: '100vh', minHeight: '500px' }}
-            className="hidden md:block"
+            style={{ 
+              width: '100%', 
+              height: '100vh',
+              minHeight: '500px',
+              maxHeight: '100vh'
+            }}
+            onLoad={() => {
+              // Optimize for mobile performance
+              if (window.innerWidth < 768) {
+                const canvas = document.querySelector('canvas');
+                if (canvas) {
+                  canvas.style.transform = 'scale(0.8)';
+                  canvas.style.transformOrigin = 'center center';
+                }
+              }
+            }}
           />
-          {/* Mobile fallback */}
-          <div className="md:hidden flex items-center justify-center h-screen bg-gradient-to-br from-tech-blue/10 to-innovation-purple/10">
-            <div className="text-center px-6">
-              <h1 className="text-4xl font-bold font-display mb-4 text-rich-black">
-                Welcome to{" "}
+          {/* Optional overlay content for mobile */}
+          <div className="absolute inset-0 md:hidden flex items-end justify-center pb-20 pointer-events-none">
+            <div className="text-center px-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 pointer-events-auto">
+              <h1 className="text-2xl font-bold font-display mb-2 text-rich-black">
                 <span className="bg-gradient-to-r from-tech-blue to-innovation-purple bg-clip-text text-transparent">
                   Knoogi Labs
                 </span>
               </h1>
-              <p className="text-lg text-professional-grey mb-8">
+              <p className="text-sm text-professional-grey mb-3">
                 Modern development solutions from Alberta, Canada
               </p>
               <Link href="/services">
-                <Button className="bg-tech-blue text-white hover:bg-blue-600 font-semibold">
-                  Explore Our Services
+                <Button size="sm" className="bg-tech-blue text-white hover:bg-blue-600 font-semibold">
+                  Explore Services
                 </Button>
               </Link>
             </div>
