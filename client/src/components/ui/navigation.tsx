@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "./button";
 import { ThemeToggle } from "./theme-toggle";
 import { Menu, X } from "lucide-react";
-import logoSvg from "@/assets/knoogi-labs-logo.svg";
+import Spline from "@splinetool/react-spline";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,17 +21,12 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-3" data-testid="logo-link">
-            <img 
-              src={logoSvg} 
-              alt="Knoogi Labs Logo" 
-              className="w-10 h-10"
-              style={{ 
-                backgroundColor: 'transparent',
-                mixBlendMode: 'screen',
-                filter: 'brightness(1.2)'
-              }}
-              data-testid="logo-image"
-            />
+            <div className="w-10 h-10" data-testid="logo-spline">
+              <Spline
+                scene="https://prod.spline.design/7GXY7lFTsynTHZQl/scene.splinecode"
+                style={{ width: '100%', height: '100%' }}
+              />
+            </div>
             <span className="text-2xl text-white font-brand uppercase">
               <span style={{ fontWeight: 900 }}>KNOOGI</span>
               <span style={{ fontWeight: 800 }}> LABS</span>
