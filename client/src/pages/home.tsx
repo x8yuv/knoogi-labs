@@ -99,34 +99,25 @@ export default function Home() {
             style={{ 
               width: '100%', 
               height: '100vh',
-              minHeight: '500px',
-              maxHeight: '100vh'
+              minHeight: '100vh'
             }}
-            onLoad={() => {
-              // Optimize for mobile performance
-              if (window.innerWidth < 768) {
-                const canvas = document.querySelector('canvas');
-                if (canvas) {
-                  canvas.style.transform = 'scale(0.8)';
-                  canvas.style.transformOrigin = 'center center';
-                }
-              }
-            }}
+            className="w-full h-full object-cover"
           />
-          {/* Optional overlay content for mobile */}
-          <div className="absolute inset-0 md:hidden flex items-end justify-center pb-20 pointer-events-none">
-            <div className="text-center px-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 pointer-events-auto">
-              <h1 className="text-2xl font-bold font-display mb-2 text-rich-black">
+          {/* Mobile overlay content */}
+          <div className="absolute inset-0 md:hidden flex items-center justify-center pointer-events-none">
+            <div className="text-center px-6 bg-white/95 backdrop-blur-md rounded-xl shadow-lg p-6 pointer-events-auto max-w-sm mx-4">
+              <h1 className="text-3xl font-bold font-display mb-3 text-rich-black">
+                Welcome to{" "}
                 <span className="bg-gradient-to-r from-tech-blue to-innovation-purple bg-clip-text text-transparent">
                   Knoogi Labs
                 </span>
               </h1>
-              <p className="text-sm text-professional-grey mb-3">
+              <p className="text-base text-professional-grey mb-4">
                 Modern development solutions from Alberta, Canada
               </p>
               <Link href="/services">
-                <Button size="sm" className="bg-tech-blue text-white hover:bg-blue-600 font-semibold">
-                  Explore Services
+                <Button className="bg-tech-blue text-white hover:bg-blue-600 font-semibold w-full">
+                  Explore Our Services
                 </Button>
               </Link>
             </div>
