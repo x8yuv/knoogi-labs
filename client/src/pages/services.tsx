@@ -189,7 +189,7 @@ export default function Services() {
       {/* Services Grid */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="space-y-16">
+          <div className="space-y-11">
             {services.map((service, index) => {
               const Icon = service.icon;
               const isEven = index % 2 === 0;
@@ -205,26 +205,26 @@ export default function Services() {
                       <img 
                         src={service.image} 
                         alt={`${service.title} service illustration`} 
-                        className="w-full h-64 lg:h-full object-cover"
+                        className="w-full h-48 lg:h-full object-cover"
                         data-testid={`service-image-${index}`}
                       />
                     </div>
-                    <div className={`p-8 lg:p-12 order-1 ${!isEven ? 'lg:order-2' : 'lg:order-1'}`}>
-                      <CardContent className="p-0 space-y-6">
-                        <div className={`w-16 h-16 bg-gradient-to-br ${service.iconGradient} rounded-xl flex items-center justify-center`}>
-                          <Icon className="text-white w-8 h-8" />
+                    <div className={`p-6 lg:p-8 order-1 ${!isEven ? 'lg:order-2' : 'lg:order-1'}`}>
+                      <CardContent className="p-0 space-y-4">
+                        <div className={`w-12 h-12 bg-gradient-to-br ${service.iconGradient} rounded-xl flex items-center justify-center`}>
+                          <Icon className="text-white w-6 h-6" />
                         </div>
                         
                         <div>
-                          <h2 className="text-3xl font-bold font-display mb-4" data-testid={`service-title-${index}`}>
+                          <h2 className="text-2xl font-bold font-display mb-3" data-testid={`service-title-${index}`}>
                             {service.title}
                           </h2>
-                          <p className="text-professional-grey text-lg mb-6" data-testid={`service-description-${index}`}>
+                          <p className="text-professional-grey text-base mb-4" data-testid={`service-description-${index}`}>
                             {service.longDescription}
                           </p>
                         </div>
 
-                        <div className="grid md:grid-cols-2 gap-4">
+                        <div className="grid md:grid-cols-2 gap-3">
                           <div>
                             <h4 className="font-semibold mb-3 flex items-center">
                               <CheckCircle className="w-4 h-4 text-success-green mr-2" />
