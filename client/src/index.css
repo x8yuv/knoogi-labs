@@ -164,23 +164,4 @@
     color: var(--tech-blue);
   }
   
-  /* Cover duplicate navigation within Spline scenes */
-  [data-testid="hero-section"]::after,
-  [data-testid="contact-hero-section"]::after {
-    content: '';
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    height: 120px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.8));
-    z-index: 10;
-    pointer-events: none;
-  }
-  
-  /* Dark mode overlay */
-  .dark [data-testid="hero-section"]::after,
-  .dark [data-testid="contact-hero-section"]::after {
-    background: linear-gradient(to bottom, rgba(26, 32, 46, 0.95), rgba(26, 32, 46, 0.8));
-  }
 }
