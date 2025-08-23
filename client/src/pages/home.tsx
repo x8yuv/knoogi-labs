@@ -94,24 +94,86 @@ export default function Home() {
       {/* Hero Section */}
       <section className="min-h-screen pt-16 relative overflow-hidden" data-testid="hero-section">
         <div className="w-full h-full">
-          <Spline
-            scene="https://prod.spline.design/O4KW31BYKC1a4M1N/scene.splinecode"
-            style={{ 
-              width: '100%', 
-              height: '100vh',
-              minHeight: '100vh'
-            }}
-            className="w-full h-full"
-          />
+          {/* Desktop Spline */}
+          <div className="hidden md:block w-full h-full">
+            <Spline
+              scene="https://prod.spline.design/O4KW31BYKC1a4M1N/scene.splinecode"
+              style={{ 
+                width: '100%', 
+                height: '100vh',
+                minHeight: '100vh'
+              }}
+              className="w-full h-full"
+            />
+          </div>
           
-          {/* Mobile navigation overlay - positioned at bottom */}
-          <div className="absolute bottom-8 left-0 right-0 md:hidden flex justify-center pointer-events-none">
-            <div className="bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg pointer-events-auto">
-              <Link href="/services">
-                <Button size="sm" className="bg-tech-blue text-white hover:bg-blue-600 font-semibold rounded-full">
-                  Explore Services
-                </Button>
-              </Link>
+          {/* Mobile Hero */}
+          <div className="md:hidden w-full min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+            {/* Animated background elements */}
+            <div className="absolute inset-0">
+              <div className="absolute top-20 left-10 w-72 h-72 bg-tech-blue/20 rounded-full blur-3xl animate-pulse"></div>
+              <div className="absolute bottom-32 right-8 w-96 h-96 bg-innovation-purple/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-success-green/20 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+            </div>
+            
+            {/* Grid pattern overlay */}
+            <div className="absolute inset-0 opacity-10">
+              <div style={{
+                backgroundImage: `
+                  linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+                  linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)
+                `,
+                backgroundSize: '50px 50px'
+              }} className="w-full h-full"></div>
+            </div>
+            
+            {/* Content */}
+            <div className="relative z-10 flex items-center justify-center min-h-screen px-6">
+              <div className="text-center max-w-sm mx-auto">
+                {/* Logo/Icon */}
+                <div className="mb-8 relative">
+                  <div className="w-24 h-24 mx-auto bg-gradient-to-br from-tech-blue to-innovation-purple rounded-3xl shadow-2xl flex items-center justify-center mb-6 animate-bounce">
+                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-success-green rounded-full animate-ping"></div>
+                </div>
+                
+                {/* Main heading */}
+                <h1 className="text-4xl font-bold font-display mb-4 text-white leading-tight">
+                  Welcome to{" "}
+                  <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                    Knoogi Labs
+                  </span>
+                </h1>
+                
+                {/* Subtitle */}
+                <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+                  Modern development solutions from the heart of Alberta, Canada. Building the future with innovative technology.
+                </p>
+                
+                {/* Action buttons */}
+                <div className="space-y-4">
+                  <Link href="/services">
+                    <Button className="bg-gradient-to-r from-tech-blue to-innovation-purple text-white hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold w-full py-3 rounded-xl">
+                      Explore Our Services
+                    </Button>
+                  </Link>
+                  <Link href="/contact">
+                    <Button variant="outline" className="w-full py-3 border-2 border-white/30 text-white hover:bg-white hover:text-slate-900 transition-all duration-300 rounded-xl backdrop-blur-sm">
+                      Get In Touch
+                    </Button>
+                  </Link>
+                </div>
+                
+                {/* Scroll indicator */}
+                <div className="mt-12 animate-bounce">
+                  <svg className="w-6 h-6 text-white/60 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
