@@ -27,7 +27,7 @@ export default function Careers() {
     {
       icon: MapPin,
       title: "Flexible Work",
-      description: "Remote-first culture with optional office space in Calgary"
+      description: "All positions are fully remote - work from the comfort of your home and from anywhere"
     },
     {
       icon: Clock,
