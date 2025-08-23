@@ -93,6 +93,50 @@ export default function Home() {
             style={{ width: '100%', height: '100vh' }}
           />
         </div>
+        
+        {/* Hero Text Overlay */}
+        <div className="absolute inset-0 flex items-center justify-start z-10 pointer-events-none">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+            <div className="max-w-2xl space-y-6">
+              <div className="space-y-4">
+                <h1 className="text-5xl lg:text-6xl font-bold leading-tight font-display text-rich-black dark:text-white">
+                  Innovation Meets{" "}
+                  <span className="bg-gradient-to-r from-tech-blue to-innovation-purple bg-clip-text text-transparent">
+                    Excellence
+                  </span>
+                </h1>
+                <p className="text-xl text-professional-grey dark:text-gray-300 leading-relaxed">
+                  Knoogi Labs delivers cutting-edge technology solutions from Alberta, Canada. 
+                  We specialize in AI development, custom applications, and digital transformation 
+                  that drives real business results.
+                </p>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4 pointer-events-auto">
+                <Link href="/contact">
+                  <Button 
+                    size="lg" 
+                    className="bg-tech-blue text-white hover:bg-blue-600 font-semibold"
+                    data-testid="hero-get-started"
+                  >
+                    Start Your Project
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </Link>
+                <Link href="/services">
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="font-semibold border-professional-grey text-professional-grey hover:border-tech-blue hover:text-tech-blue bg-white/80 backdrop-blur-sm"
+                    data-testid="hero-view-services"
+                  >
+                    View Our Services
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Services Preview Section */}
