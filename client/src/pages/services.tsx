@@ -7,6 +7,7 @@ import { Link } from "wouter";
 import aiDevelopmentImage from "@assets/ai-7977960_1920_1755937825207.jpg";
 import appDevelopmentImage from "@assets/iphone-676726_1920_1755938088882.jpg";
 import digitalMarketingImage from "@assets/online-marketing-1246457_1920_1755938312222.jpg";
+import mediaCreationImage from "@assets/social-media-4140959_1920_1755938523787.jpg";
 import { 
   Brain, 
   Smartphone, 
@@ -95,7 +96,7 @@ export default function Services() {
       ],
       gradient: "from-orange-50 to-red-50",
       iconGradient: "from-orange-500 to-red-500",
-      image: "https://images.unsplash.com/photo-1542744094-3a31f272c490?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      image: mediaCreationImage,
       deliverables: ["Media Assets", "Brand Guidelines", "Source Files", "Usage Rights"],
       timeline: "2-6 weeks"
     },
