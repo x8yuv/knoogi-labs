@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
+import aiDevelopmentImage from "@assets/ai-7977960_1920_1755934173370.jpg";
 import { 
   Brain, 
   Smartphone, 
@@ -35,7 +36,7 @@ export default function Services() {
       ],
       gradient: "from-blue-50 to-indigo-50",
       iconGradient: "from-tech-blue to-innovation-purple",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
+      image: aiDevelopmentImage,
       deliverables: ["AI Model", "Documentation", "Training", "Support"],
       timeline: "6-12 weeks"
     },
