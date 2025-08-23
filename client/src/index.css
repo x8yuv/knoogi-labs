@@ -164,7 +164,7 @@
     color: var(--tech-blue);
   }
   
-  /* Hide the navigation header in Spline scenes */
+  /* Hide the navigation header and text in Spline scenes */
   [data-testid="hero-section"] {
     overflow: hidden;
     position: relative;
@@ -176,8 +176,8 @@
     position: absolute;
     top: 80px;
     left: 0;
-    right: 0;
-    height: 80px;
+    right: 60%;
+    height: 400px;
     background: var(--background);
     z-index: 2;
     pointer-events: none;
