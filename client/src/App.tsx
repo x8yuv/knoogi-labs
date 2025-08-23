@@ -8,6 +8,8 @@ import Home from "@/pages/home.tsx";
 import About from "@/pages/about.tsx";
 import Services from "@/pages/services.tsx";
 import Contact from "@/pages/contact.tsx";
+import Careers from "@/pages/careers.tsx";
+import PrivacyPolicy from "@/pages/privacy-policy.tsx";
 import NotFound from "@/pages/not-found.tsx";
 
 function Router() {
@@ -17,6 +19,8 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/services" component={Services} />
       <Route path="/contact" component={Contact} />
+      <Route path="/careers" component={Careers} />
+      <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route component={NotFound} />
     </Switch>
   );

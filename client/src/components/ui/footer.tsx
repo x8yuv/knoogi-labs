@@ -67,17 +67,21 @@ export function Footer() {
               <span className="block text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-team-link">
                 Our Team
               </span>
-              <span className="block text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-careers-link">
-                Careers
-              </span>
+              <Link href="/careers">
+                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-careers-link">
+                  Careers
+                </span>
+              </Link>
               <Link href="/contact">
                 <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-contact-link">
                   Contact
                 </span>
               </Link>
-              <span className="block text-gray-300 hover:text-white transition-colors cursor-pointer" data-testid="footer-privacy-link">
-                Privacy Policy
-              </span>
+              <Link href="/privacy-policy">
+                <span className="block text-gray-300 hover:text-white transition-colors" data-testid="footer-privacy-link">
+                  Privacy Policy
+                </span>
+              </Link>
             </div>
           </div>
           
