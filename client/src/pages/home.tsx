@@ -19,7 +19,16 @@ import {
   Handshake,
   ArrowRight,
   Star,
-  CheckCircle
+  CheckCircle,
+  Globe,
+  Target,
+  Users,
+  Lightbulb,
+  Shield,
+  Zap,
+  Award,
+  Clock,
+  Heart
 } from "lucide-react";
 
 export default function Home() {
@@ -268,6 +277,423 @@ export default function Home() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section - Solving World Problems */}
+      <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 animate-fadeIn">
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-tech-blue to-innovation-purple rounded-xl flex items-center justify-center">
+                  <Globe className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-4xl lg:text-5xl font-bold font-display text-rich-black" data-testid="mission-title">
+                  Our Mission
+                </h2>
+              </div>
+              <h3 className="text-2xl lg:text-3xl font-semibold text-tech-blue mb-4">
+                Solving World Problems Through Technology
+              </h3>
+              <p className="text-lg text-professional-grey leading-relaxed">
+                At Knoogi Labs, we believe technology is the key to addressing humanity's greatest challenges. 
+                From climate change and healthcare accessibility to education inequality and economic disparity, 
+                we develop innovative solutions that create meaningful impact on a global scale.
+              </p>
+              <p className="text-lg text-professional-grey leading-relaxed">
+                Our team combines cutting-edge artificial intelligence, sustainable development practices, 
+                and human-centered design to build technology that doesn't just serve businesses—it serves humanity.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-6 animate-fadeIn">
+              <Card className="bg-white p-6 hover:shadow-lg transition-all">
+                <CardContent className="p-0 text-center">
+                  <Heart className="w-8 h-8 text-red-500 mx-auto mb-4" />
+                  <h4 className="font-semibold text-rich-black mb-2">Healthcare Innovation</h4>
+                  <p className="text-sm text-professional-grey">AI-powered diagnostics and telemedicine solutions</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white p-6 hover:shadow-lg transition-all">
+                <CardContent className="p-0 text-center">
+                  <Lightbulb className="w-8 h-8 text-yellow-500 mx-auto mb-4" />
+                  <h4 className="font-semibold text-rich-black mb-2">Smart Cities</h4>
+                  <p className="text-sm text-professional-grey">IoT and data analytics for sustainable urban living</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white p-6 hover:shadow-lg transition-all">
+                <CardContent className="p-0 text-center">
+                  <Shield className="w-8 h-8 text-green-500 mx-auto mb-4" />
+                  <h4 className="font-semibold text-rich-black mb-2">Climate Tech</h4>
+                  <p className="text-sm text-professional-grey">Carbon tracking and renewable energy optimization</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white p-6 hover:shadow-lg transition-all">
+                <CardContent className="p-0 text-center">
+                  <Users className="w-8 h-8 text-blue-500 mx-auto mb-4" />
+                  <h4 className="font-semibold text-rich-black mb-2">Social Impact</h4>
+                  <p className="text-sm text-professional-grey">Accessibility tools and digital inclusion platforms</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Approach Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16 animate-fadeIn">
+            <h2 className="text-4xl lg:text-5xl font-bold font-display text-rich-black" data-testid="approach-title">
+              Our Technology Approach
+            </h2>
+            <p className="text-xl text-professional-grey max-w-3xl mx-auto">
+              We leverage cutting-edge technologies and proven methodologies to deliver solutions that scale globally.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            <Card className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 hover:shadow-xl transition-all animate-fadeIn">
+              <CardContent className="p-0">
+                <div className="w-16 h-16 bg-gradient-to-br from-tech-blue to-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                  <Brain className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 font-display">AI-First Development</h3>
+                <p className="text-professional-grey leading-relaxed mb-6">
+                  Every solution we build incorporates artificial intelligence from the ground up, 
+                  ensuring intelligent automation, predictive analytics, and adaptive user experiences.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-success-green" />
+                    <span className="text-sm text-professional-grey">Machine Learning Integration</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-success-green" />
+                    <span className="text-sm text-professional-grey">Natural Language Processing</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-success-green" />
+                    <span className="text-sm text-professional-grey">Computer Vision Systems</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-green-50 to-teal-50 p-8 hover:shadow-xl transition-all animate-fadeIn">
+              <CardContent className="p-0">
+                <div className="w-16 h-16 bg-gradient-to-br from-success-green to-teal-600 rounded-xl flex items-center justify-center mb-6">
+                  <Zap className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 font-display">Agile & Scalable</h3>
+                <p className="text-professional-grey leading-relaxed mb-6">
+                  Our development process is built for rapid iteration and global scaling, 
+                  ensuring your solution can grow from prototype to worldwide deployment.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-success-green" />
+                    <span className="text-sm text-professional-grey">Cloud-Native Architecture</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-success-green" />
+                    <span className="text-sm text-professional-grey">Microservices Design</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-success-green" />
+                    <span className="text-sm text-professional-grey">DevOps Integration</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-gradient-to-br from-purple-50 to-pink-50 p-8 hover:shadow-xl transition-all animate-fadeIn">
+              <CardContent className="p-0">
+                <div className="w-16 h-16 bg-gradient-to-br from-innovation-purple to-pink-600 rounded-xl flex items-center justify-center mb-6">
+                  <Target className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 font-display">Human-Centered Design</h3>
+                <p className="text-professional-grey leading-relaxed mb-6">
+                  Technology should enhance human capabilities, not replace them. 
+                  Every interface and interaction is designed with accessibility and usability at its core.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-success-green" />
+                    <span className="text-sm text-professional-grey">User Experience Research</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-success-green" />
+                    <span className="text-sm text-professional-grey">Accessibility Standards</span>
+                  </li>
+                  <li className="flex items-center space-x-2">
+                    <CheckCircle className="w-4 h-4 text-success-green" />
+                    <span className="text-sm text-professional-grey">Cross-Platform Compatibility</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Global Impact Section */}
+      <section className="py-20 gradient-overlay">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16 animate-fadeIn">
+            <h2 className="text-4xl lg:text-5xl font-bold font-display text-rich-black" data-testid="impact-title">
+              Global Impact & Reach
+            </h2>
+            <p className="text-xl text-professional-grey max-w-3xl mx-auto">
+              From Calgary to the world, our solutions are making a difference across continents and communities.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div className="text-center animate-fadeIn">
+              <div className="w-20 h-20 bg-gradient-to-br from-tech-blue to-innovation-purple rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl font-bold text-white">25+</span>
+              </div>
+              <h3 className="text-xl font-semibold text-rich-black mb-2">Countries Served</h3>
+              <p className="text-professional-grey">Our solutions deployed across six continents</p>
+            </div>
+            <div className="text-center animate-fadeIn">
+              <div className="w-20 h-20 bg-gradient-to-br from-success-green to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl font-bold text-white">1M+</span>
+              </div>
+              <h3 className="text-xl font-semibold text-rich-black mb-2">Lives Impacted</h3>
+              <p className="text-professional-grey">People benefiting from our technology solutions</p>
+            </div>
+            <div className="text-center animate-fadeIn">
+              <div className="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl font-bold text-white">80%</span>
+              </div>
+              <h3 className="text-xl font-semibold text-rich-black mb-2">Efficiency Gains</h3>
+              <p className="text-professional-grey">Average improvement in client operations</p>
+            </div>
+            <div className="text-center animate-fadeIn">
+              <div className="w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl font-bold text-white">24/7</span>
+              </div>
+              <h3 className="text-xl font-semibold text-rich-black mb-2">Global Support</h3>
+              <p className="text-professional-grey">Round-the-clock monitoring and assistance</p>
+            </div>
+          </div>
+
+          <Card className="bg-white p-8 lg:p-12 hover:shadow-xl transition-all animate-fadeIn">
+            <CardContent className="p-0">
+              <div className="grid lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h3 className="text-3xl font-bold font-display text-rich-black mb-6">
+                    Real-World Impact Stories
+                  </h3>
+                  <div className="space-y-6">
+                    <div className="flex items-start space-x-4">
+                      <div className="w-8 h-8 bg-tech-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <Heart className="w-4 h-4 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-rich-black mb-1">Healthcare Revolution</h4>
+                        <p className="text-professional-grey text-sm">
+                          Our AI diagnostic platform reduced medical screening time by 60% in rural communities across Southeast Asia.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-4">
+                      <div className="w-8 h-8 bg-success-green rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <Shield className="w-4 h-4 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-rich-black mb-1">Climate Solutions</h4>
+                        <p className="text-professional-grey text-sm">
+                          Smart grid optimization systems helped reduce carbon emissions by 35% in three major Canadian cities.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-4">
+                      <div className="w-8 h-8 bg-innovation-purple rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <Users className="w-4 h-4 text-white" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-rich-black mb-1">Education Access</h4>
+                        <p className="text-professional-grey text-sm">
+                          Interactive learning platforms brought quality education to over 100,000 students in remote areas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 text-center">
+                  <Globe className="w-16 h-16 text-tech-blue mx-auto mb-4" />
+                  <h4 className="text-xl font-semibold text-rich-black mb-4">
+                    Join Our Global Mission
+                  </h4>
+                  <p className="text-professional-grey mb-6">
+                    Ready to create technology that changes the world? Let's build something meaningful together.
+                  </p>
+                  <Link href="/contact">
+                    <Button className="bg-gradient-to-r from-tech-blue to-innovation-purple text-white hover:shadow-lg transition-all">
+                      Start Your Project
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Innovation Labs Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6 animate-fadeIn">
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-innovation-purple to-pink-600 rounded-xl flex items-center justify-center">
+                  <Lightbulb className="w-6 h-6 text-white" />
+                </div>
+                <h2 className="text-4xl lg:text-5xl font-bold font-display text-rich-black" data-testid="labs-title">
+                  Innovation Labs
+                </h2>
+              </div>
+              <h3 className="text-2xl lg:text-3xl font-semibold text-innovation-purple mb-4">
+                Where Tomorrow's Solutions Are Born Today
+              </h3>
+              <p className="text-lg text-professional-grey leading-relaxed">
+                Our dedicated research and development facility in Calgary serves as the birthplace of 
+                breakthrough technologies. Here, our team of researchers, engineers, and visionaries 
+                work on next-generation solutions that address emerging global challenges.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex items-center space-x-2">
+                  <Award className="w-5 h-5 text-tech-blue" />
+                  <span className="text-professional-grey">15+ Patents Filed</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Clock className="w-5 h-5 text-success-green" />
+                  <span className="text-professional-grey">24/7 Research Cycles</span>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 gap-6 animate-fadeIn">
+              <Card className="bg-gradient-to-br from-purple-50 to-indigo-50 p-6 hover:shadow-lg transition-all">
+                <CardContent className="p-0">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-10 h-10 bg-gradient-to-br from-tech-blue to-indigo-600 rounded-lg flex items-center justify-center">
+                      <Brain className="w-5 h-5 text-white" />
+                    </div>
+                    <h4 className="text-lg font-semibold text-rich-black">Quantum Computing Research</h4>
+                  </div>
+                  <p className="text-professional-grey text-sm">
+                    Exploring quantum algorithms for optimization problems in logistics and financial modeling.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="bg-gradient-to-br from-green-50 to-teal-50 p-6 hover:shadow-lg transition-all">
+                <CardContent className="p-0">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-10 h-10 bg-gradient-to-br from-success-green to-teal-600 rounded-lg flex items-center justify-center">
+                      <Shield className="w-5 h-5 text-white" />
+                    </div>
+                    <h4 className="text-lg font-semibold text-rich-black">Sustainable AI Systems</h4>
+                  </div>
+                  <p className="text-professional-grey text-sm">
+                    Developing energy-efficient AI models that reduce computational carbon footprint by 70%.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="bg-gradient-to-br from-orange-50 to-red-50 p-6 hover:shadow-lg transition-all">
+                <CardContent className="p-0">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center">
+                      <Globe className="w-5 h-5 text-white" />
+                    </div>
+                    <h4 className="text-lg font-semibold text-rich-black">Blockchain for Good</h4>
+                  </div>
+                  <p className="text-professional-grey text-sm">
+                    Creating transparent supply chain solutions for humanitarian aid and fair trade initiatives.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why We Matter Section */}
+      <section className="py-20 bg-gradient-to-br from-rich-black to-slate-800 text-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16 animate-fadeIn">
+            <h2 className="text-4xl lg:text-5xl font-bold font-display" data-testid="matter-title">
+              Why We Matter
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              In a world facing unprecedented challenges, we're not just building software—we're crafting solutions for humanity's future.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            <Card className="bg-white/10 backdrop-blur-sm p-8 border-white/20 hover:bg-white/15 transition-all animate-fadeIn">
+              <CardContent className="p-0 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-tech-blue to-innovation-purple rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Heart className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 font-display">Purpose-Driven Innovation</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Every line of code we write, every system we design, and every solution we deploy 
+                  is guided by one question: "How does this make the world better?"
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/10 backdrop-blur-sm p-8 border-white/20 hover:bg-white/15 transition-all animate-fadeIn">
+              <CardContent className="p-0 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-success-green to-teal-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Globe className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 font-display">Global Perspective</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Based in Canada but thinking globally, we understand that today's challenges require 
+                  solutions that transcend borders, cultures, and conventional thinking.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white/10 backdrop-blur-sm p-8 border-white/20 hover:bg-white/15 transition-all animate-fadeIn">
+              <CardContent className="p-0 text-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-innovation-purple to-pink-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Zap className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 font-display">Future-Ready Solutions</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  We don't just solve today's problems—we anticipate tomorrow's challenges and 
+                  build adaptable, scalable systems that evolve with changing needs.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-16 animate-fadeIn">
+            <h3 className="text-3xl font-bold font-display mb-6">Ready to Change the World Together?</h3>
+            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+              Join us in building technology that doesn't just disrupt industries—it transforms lives, 
+              communities, and the future of our planet.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/contact">
+                <Button size="lg" className="bg-gradient-to-r from-tech-blue to-innovation-purple text-white hover:shadow-lg transition-all font-semibold px-8">
+                  Start Your Impact Project
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+              <Link href="/about">
+                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white hover:text-rich-black transition-all font-semibold px-8">
+                  Learn More About Us
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
