@@ -72,7 +72,7 @@ export default function PrivacyPolicy() {
               Your privacy matters to us. Here's how we protect your information.
             </p>
             <Badge variant="outline" className="border-tech-blue text-tech-blue">
-              Last updated: December 2024
+              Last updated: December 2025
             </Badge>
           </div>
         </div>
