@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "./button";
-import { ThemeToggle } from "./theme-toggle";
 import { Menu, X } from "lucide-react";
 import logoImage from "@assets/Untitled design_1755937273622.png";
 
@@ -52,7 +51,6 @@ export function Navigation() {
           </div>
           
           <div className="flex items-center space-x-4">
-            <ThemeToggle />
             <Button
               variant="ghost"
               size="sm"
