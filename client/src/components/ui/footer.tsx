@@ -115,11 +115,11 @@ export function Footer() {
         
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm" data-testid="footer-copyright">
-            © 2025 Knoogi Labs. All rights reserved.
+            © 2024 Knoogi Labs. All rights reserved.
           </p>
           <div className="flex items-center space-x-2 mt-4 md:mt-0">
             <MapPin className="text-success-green w-4 h-4" />
-            <span className="text-sm text-gray-300" data-testid="footer-canadian">Proudly Canadian 🍁</span>
+            <span className="text-sm text-gray-300" data-testid="footer-canadian">Proudly Canadian</span>
           </div>
         </div>
       </div>

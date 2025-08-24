@@ -52,7 +52,7 @@ export default function About() {
       description: "Reached the milestone of 50+ successful project deliveries across Canada."
     },
     {
-      year: "2025",
+      year: "2024",
       title: "Innovation Award",
       description: "Recognized as one of Alberta's top innovative technology companies."
     }
