@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { MapPin } from "lucide-react";
+import { Leaf } from "lucide-react";
 import logoImage from "@assets/Untitled design_1755937773022.png";
 
 export function Footer() {
@@ -107,7 +107,6 @@ export function Footer() {
             <h4 className="font-semibold mb-4 font-display">Contact</h4>
             <div className="space-y-2 text-gray-300">
               <p data-testid="footer-address">Calgary, Alberta, Canada</p>
-              <p data-testid="footer-phone">+1 (403) 555-0123</p>
               <p data-testid="footer-email">hello@knoogilabs.com</p>
             </div>
           </div>
@@ -115,10 +114,10 @@ export function Footer() {
         
         <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm" data-testid="footer-copyright">
-            © 2024 Knoogi Labs. All rights reserved.
+            © 2025 Knoogi Labs. All rights reserved.
           </p>
           <div className="flex items-center space-x-2 mt-4 md:mt-0">
-            <MapPin className="text-success-green w-4 h-4" />
+            <Leaf className="text-success-green w-4 h-4" />
             <span className="text-sm text-gray-300" data-testid="footer-canadian">Proudly Canadian</span>
           </div>
         </div>
