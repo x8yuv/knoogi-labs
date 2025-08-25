@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Leaf } from "lucide-react";
-import logoImage from "@assets/Untitled design_1755937773022.png";
+import logoImage from "@assets/file_000000003a34622fa5621db8de9048e5_1756103093681.png";
 
 export function Footer() {
   return (
