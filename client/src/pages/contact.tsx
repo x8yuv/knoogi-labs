@@ -113,7 +113,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      details: ["hello@knoogilabs.com"],
+      details: ["contact@knoogi.com"],
       color: "innovation-purple"
     },
     {
