@@ -10,7 +10,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/hooks/use-toast";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
-import Spline from '@splinetool/react-spline';
 import { 
   MapPin, 
   Phone, 
@@ -149,10 +148,13 @@ export default function Contact() {
         <div className="w-full h-full">
           {/* Desktop Spline */}
           <div className="hidden md:block w-full h-full">
-            <Spline
-              scene="https://prod.spline.design/GWAOdImzPXQDq9WD/scene.splinecode"
+            <iframe 
+              src='https://my.spline.design/genkubgreetingrobot-ysbgQzsuvo5rwMLH57CEBiNp/' 
+              frameBorder='0' 
+              width='100%' 
+              height='100%'
               style={{ width: '100%', height: '100vh' }}
-            />
+            ></iframe>
           </div>
           
           {/* Mobile Hero */}
