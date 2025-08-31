@@ -146,10 +146,10 @@ export default function Contact() {
       {/* Contact Form & Spline Section */}
       <section className="min-h-screen pt-16 bg-white" data-testid="contact-main-section">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-16 min-h-[80vh]">
+          <div className="max-w-2xl mx-auto">
             {/* Left Side - Contact Form */}
             <div className="space-y-8 animate-fadeIn flex flex-col justify-center">
-              <div className="text-center lg:text-left mb-8">
+              <div className="text-center mb-8">
                 <h1 className="text-4xl font-bold font-display mb-4 text-rich-black leading-tight">
                   Let's{" "}
                   <span className="bg-gradient-to-r from-tech-blue to-innovation-purple bg-clip-text text-transparent">
@@ -281,18 +281,6 @@ export default function Contact() {
               </form>
             </div>
             
-            {/* Right Side - Spline Animation */}
-            <div className="flex items-center justify-center">
-              <div className="w-full h-[50vh] lg:h-[80vh] rounded-xl overflow-hidden shadow-lg">
-                <iframe 
-                  src='https://my.spline.design/genkubgreetingrobot-ysbgQzsuvo5rwMLH57CEBiNp/' 
-                  frameBorder='0' 
-                  width='100%' 
-                  height='100%'
-                  style={{ width: '100%', height: '100%' }}
-                ></iframe>
-              </div>
-            </div>
           </div>
         </div>
       </section>
