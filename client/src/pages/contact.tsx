@@ -143,7 +143,7 @@ export default function Contact() {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Contact Form & Spline Section */}
+      {/* Contact Form Section */}
       <section className="min-h-screen pt-16 bg-white" data-testid="contact-main-section">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
           <div className="max-w-2xl mx-auto">
