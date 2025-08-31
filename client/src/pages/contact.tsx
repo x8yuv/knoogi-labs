@@ -143,208 +143,226 @@ export default function Contact() {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Contact Form Section */}
-      <section className="min-h-screen pt-16 bg-white" data-testid="contact-main-section">
+      {/* Hero Section */}
+      <section className="pt-16 bg-gradient-to-br from-tech-blue to-innovation-purple" data-testid="contact-hero-section">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-          <div className="max-w-2xl mx-auto">
-            {/* Left Side - Contact Form */}
-            <div className="space-y-8 animate-fadeIn flex flex-col justify-center">
-              <div className="text-center mb-8">
-                <h1 className="text-4xl font-bold font-display mb-4 text-rich-black leading-tight">
-                  Let's{" "}
-                  <span className="bg-gradient-to-r from-tech-blue to-innovation-purple bg-clip-text text-transparent">
-                    Connect
-                  </span>
-                </h1>
-                <p className="text-lg text-professional-grey mb-8 leading-relaxed">
-                  Ready to bring your ideas to life? Get in touch with our team of experts.
-                </p>
+          <div className="text-center text-white">
+            <h1 className="text-5xl font-bold font-display mb-6 leading-tight">
+              Let's{" "}
+              <span className="text-white">
+                Connect
+              </span>
+            </h1>
+            <p className="text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
+              Ready to bring your ideas to life? Get in touch with our team of experts and let's create something amazing together.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                <div className="text-2xl font-bold">24h</div>
+                <div className="text-sm text-gray-200">Response Time</div>
               </div>
-              
-              <h2 className="text-2xl font-bold font-display" data-testid="form-title">Send us a message</h2>
-              
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="firstName" className="text-sm font-semibold text-rich-black">
-                      First Name *
-                    </Label>
-                    <Input
-                      id="firstName"
-                      type="text"
-                      value={formData.firstName}
-                      onChange={(e) => handleInputChange("firstName", e.target.value)}
-                      placeholder="Enter your first name"
-                      className="border-gray-300 focus:border-tech-blue"
-                      data-testid="input-first-name"
-                      required
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="lastName" className="text-sm font-semibold text-rich-black">
-                      Last Name *
-                    </Label>
-                    <Input
-                      id="lastName"
-                      type="text"
-                      value={formData.lastName}
-                      onChange={(e) => handleInputChange("lastName", e.target.value)}
-                      placeholder="Enter your last name"
-                      className="border-gray-300 focus:border-tech-blue"
-                      data-testid="input-last-name"
-                      required
-                    />
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="email" className="text-sm font-semibold text-rich-black">
-                    Email *
-                  </Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={(e) => handleInputChange("email", e.target.value)}
-                    placeholder="your.email@example.com"
-                    className="border-gray-300 focus:border-tech-blue"
-                    data-testid="input-email"
-                    required
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-sm font-semibold text-rich-black">
-                    Phone
-                  </Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={(e) => handleInputChange("phone", e.target.value)}
-                    placeholder="+1 (555) 123-4567"
-                    className="border-gray-300 focus:border-tech-blue"
-                    data-testid="input-phone"
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="service" className="text-sm font-semibold text-rich-black">
-                    Service Interest *
-                  </Label>
-                  <Select value={formData.service} onValueChange={(value) => handleInputChange("service", value)}>
-                    <SelectTrigger className="border-gray-300 focus:border-tech-blue" data-testid="select-service">
-                      <SelectValue placeholder="Select a service" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {services.map((service) => (
-                        <SelectItem key={service} value={service}>
-                          {service}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-sm font-semibold text-rich-black">
-                    Message *
-                  </Label>
-                  <Textarea
-                    id="message"
-                    value={formData.message}
-                    onChange={(e) => handleInputChange("message", e.target.value)}
-                    placeholder="Tell us about your project..."
-                    rows={5}
-                    className="border-gray-300 focus:border-tech-blue resize-none"
-                    data-testid="input-message"
-                    required
-                  />
-                </div>
-                
-                <Button 
-                  type="submit" 
-                  size="lg"
-                  className="w-full bg-tech-blue text-white hover:bg-blue-600 font-semibold"
-                  disabled={contactMutation.isPending}
-                  data-testid="button-submit"
-                >
-                  {contactMutation.isPending ? (
-                    "Sending..."
-                  ) : (
-                    <>
-                      Send Message
-                      <Send className="ml-2 w-4 h-4" />
-                    </>
-                  )}
-                </Button>
-              </form>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                <div className="text-2xl font-bold">100+</div>
+                <div className="text-sm text-gray-200">Projects</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                <div className="text-2xl font-bold">5★</div>
+                <div className="text-sm text-gray-200">Rating</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                <div className="text-2xl font-bold">24/7</div>
+                <div className="text-sm text-gray-200">Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Form Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold font-display mb-4" data-testid="form-title">Send us a message</h2>
+            <p className="text-lg text-professional-grey">Fill out the form below and we'll get back to you within 24 hours.</p>
+          </div>
+          
+          <form onSubmit={handleSubmit} className="space-y-6 max-w-2xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="firstName" className="text-sm font-semibold text-rich-black">
+                  First Name *
+                </Label>
+                <Input
+                  id="firstName"
+                  type="text"
+                  value={formData.firstName}
+                  onChange={(e) => handleInputChange("firstName", e.target.value)}
+                  placeholder="Enter your first name"
+                  className="border-gray-300 focus:border-tech-blue"
+                  data-testid="input-first-name"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="lastName" className="text-sm font-semibold text-rich-black">
+                  Last Name *
+                </Label>
+                <Input
+                  id="lastName"
+                  type="text"
+                  value={formData.lastName}
+                  onChange={(e) => handleInputChange("lastName", e.target.value)}
+                  placeholder="Enter your last name"
+                  className="border-gray-300 focus:border-tech-blue"
+                  data-testid="input-last-name"
+                  required
+                />
+              </div>
             </div>
             
-          </div>
+            <div className="space-y-2">
+              <Label htmlFor="email" className="text-sm font-semibold text-rich-black">
+                Email *
+              </Label>
+              <Input
+                id="email"
+                type="email"
+                value={formData.email}
+                onChange={(e) => handleInputChange("email", e.target.value)}
+                placeholder="your.email@example.com"
+                className="border-gray-300 focus:border-tech-blue"
+                data-testid="input-email"
+                required
+              />
+            </div>
+            
+            <div className="space-y-2">
+              <Label htmlFor="phone" className="text-sm font-semibold text-rich-black">
+                Phone
+              </Label>
+              <Input
+                id="phone"
+                type="tel"
+                value={formData.phone}
+                onChange={(e) => handleInputChange("phone", e.target.value)}
+                placeholder="+1 (555) 123-4567"
+                className="border-gray-300 focus:border-tech-blue"
+                data-testid="input-phone"
+              />
+            </div>
+            
+            <div className="space-y-2">
+              <Label htmlFor="service" className="text-sm font-semibold text-rich-black">
+                Service Interest *
+              </Label>
+              <Select value={formData.service} onValueChange={(value) => handleInputChange("service", value)}>
+                <SelectTrigger className="border-gray-300 focus:border-tech-blue" data-testid="select-service">
+                  <SelectValue placeholder="Select a service" />
+                </SelectTrigger>
+                <SelectContent>
+                  {services.map((service) => (
+                    <SelectItem key={service} value={service}>
+                      {service}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+            
+            <div className="space-y-2">
+              <Label htmlFor="message" className="text-sm font-semibold text-rich-black">
+                Message *
+              </Label>
+              <Textarea
+                id="message"
+                value={formData.message}
+                onChange={(e) => handleInputChange("message", e.target.value)}
+                placeholder="Tell us about your project..."
+                rows={5}
+                className="border-gray-300 focus:border-tech-blue resize-none"
+                data-testid="input-message"
+                required
+              />
+            </div>
+            
+            <Button 
+              type="submit" 
+              size="lg"
+              className="w-full bg-tech-blue text-white hover:bg-blue-600 font-semibold"
+              disabled={contactMutation.isPending}
+              data-testid="button-submit"
+            >
+              {contactMutation.isPending ? (
+                "Sending..."
+              ) : (
+                <>
+                  Send Message
+                  <Send className="ml-2 w-4 h-4" />
+                </>
+              )}
+            </Button>
+          </form>
         </div>
       </section>
 
       {/* Contact Information Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
-            {/* Contact Information */}
-            <div className="space-y-8 animate-fadeIn">
-              <h2 className="text-3xl font-bold font-display" data-testid="info-title">Contact Information</h2>
-              
-              <div className="space-y-6">
-                {contactInfo.map((info, index) => {
-                  const Icon = info.icon;
-                  return (
-                    <div key={index} className="flex items-start space-x-4">
-                      <div className={`w-12 h-12 bg-${info.color}/10 rounded-xl flex items-center justify-center flex-shrink-0`}>
-                        <Icon className={`text-${info.color} w-5 h-5`} />
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-rich-black mb-1" data-testid={`info-title-${index}`}>
-                          {info.title}
-                        </h3>
-                        {info.details.map((detail, detailIndex) => (
-                          <p key={detailIndex} className="text-professional-grey" data-testid={`info-detail-${index}-${detailIndex}`}>
-                            {detail}
-                          </p>
-                        ))}
-                      </div>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold font-display mb-4" data-testid="info-title">Contact Information</h2>
+            <p className="text-lg text-professional-grey">Get in touch with us through any of these channels.</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            {contactInfo.map((info, index) => {
+              const Icon = info.icon;
+              return (
+                <Card key={index} className="bg-white p-6 text-center hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-0">
+                    <div className={`w-12 h-12 bg-${info.color}/10 rounded-xl flex items-center justify-center mx-auto mb-4`}>
+                      <Icon className={`text-${info.color} w-6 h-6`} />
                     </div>
+                    <h3 className="font-semibold text-rich-black mb-2" data-testid={`info-title-${index}`}>
+                      {info.title}
+                    </h3>
+                    {info.details.map((detail, detailIndex) => (
+                      <p key={detailIndex} className="text-professional-grey text-sm" data-testid={`info-detail-${index}-${detailIndex}`}>
+                        {detail}
+                      </p>
+                    ))}
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+          
+          <Card className="bg-gradient-to-br from-tech-blue/5 to-innovation-purple/5 border-0 max-w-md mx-auto">
+            <CardContent className="p-6 text-center">
+              <h3 className="font-semibold text-rich-black mb-4" data-testid="social-title">Follow Us</h3>
+              <div className="flex justify-center space-x-4">
+                {socialLinks.map((social, index) => {
+                  const Icon = social.icon;
+                  return (
+                    <a 
+                      key={index}
+                      href={social.href} 
+                      className="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-professional-grey hover:shadow-md transition-all duration-300 hover:scale-105"
+                      style={{ color: 'inherit' }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.className = e.currentTarget.className.replace('text-professional-grey', social.color);
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.className = e.currentTarget.className.replace(social.color, 'text-professional-grey');
+                      }}
+                      data-testid={`social-link-${index}`}
+                    >
+                      <Icon className="w-5 h-5" />
+                    </a>
                   );
                 })}
               </div>
-              
-              <Card className="bg-gradient-to-br from-tech-blue/5 to-innovation-purple/5 border-0">
-                <CardContent className="p-6">
-                  <h3 className="font-semibold text-rich-black mb-3" data-testid="social-title">Follow Us</h3>
-                  <div className="flex space-x-4">
-                    {socialLinks.map((social, index) => {
-                      const Icon = social.icon;
-                      return (
-                        <a 
-                          key={index}
-                          href={social.href} 
-                          className="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-professional-grey hover:shadow-md transition-all duration-300 hover:scale-105"
-                          style={{ color: 'inherit' }}
-                          onMouseEnter={(e) => {
-                            e.currentTarget.className = e.currentTarget.className.replace('text-professional-grey', social.color);
-                          }}
-                          onMouseLeave={(e) => {
-                            e.currentTarget.className = e.currentTarget.className.replace(social.color, 'text-professional-grey');
-                          }}
-                          data-testid={`social-link-${index}`}
-                        >
-                          <Icon className="w-5 h-5" />
-                        </a>
-                      );
-                    })}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+            </CardContent>
+          </Card>
         </div>
       </section>
 
