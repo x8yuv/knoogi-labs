@@ -2,7 +2,7 @@ import { Navigation } from "@/components/ui/navigation";
 import { Footer } from "@/components/ui/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Calendar, Building, Linkedin, Twitter, Github } from "lucide-react";
+import { MapPin, Calendar, Building, ExternalLink } from "lucide-react";
 import { Link } from "wouter";
 import yuvrajPhoto from "@assets/IMG_7245_1755975266928.jpg";
 import deepikaPhoto from "@assets/Screenshot_20250823-125352_1755975358809.png";
@@ -13,48 +13,55 @@ export default function About() {
       name: "Deepika Misra",
       role: "Co-Founder & CEO",
       image: deepikaPhoto,
-      description: "Deepika brings over 8 years of experience in technology leadership and business strategy. She specializes in AI implementation and digital transformation, helping businesses leverage cutting-edge technology for growth.",
+      description: "Deepika leads Knoogi Labs with a passion for creating technology that solves real-world problems. She drives the vision behind platforms like Immigrid and Satori.care, making essential services more accessible to Canadians.",
       color: "tech-blue"
     },
     {
       name: "Yuvraj Manchanda",
       role: "Co-Founder & CTO",
       image: yuvrajPhoto,
-      description: "Yuvraj is a full-stack developer and technology architect with expertise in scalable systems and modern development frameworks. He leads our technical vision and ensures delivery of high-quality solutions.",
+      description: "Yuvraj architects the technical infrastructure behind platforms like Immigrid and Satori.care, ensuring scalable and user-friendly solutions. His expertise in AI and modern development brings innovative ideas to life.",
       color: "innovation-purple"
     }
   ];
 
   const milestones = [
     {
-      year: "2019",
-      title: "Company Founded",
-      description: "Knoogi Labs was established in Alberta with a vision to bridge technology and business needs."
-    },
-    {
-      year: "2020",
-      title: "First Major Client",
-      description: "Secured our first enterprise client and delivered a successful AI implementation project."
-    },
-    {
-      year: "2021",
-      title: "Team Expansion",
-      description: "Grew our team to include specialists in mobile development and digital marketing."
-    },
-    {
-      year: "2022",
-      title: "AI Focus",
-      description: "Expanded our AI capabilities with machine learning and automation solutions."
-    },
-    {
       year: "2023",
-      title: "50+ Projects",
-      description: "Reached the milestone of 50+ successful project deliveries across Canada."
+      title: "Immigrid Platform Launch",
+      description: "Launched Immigrid.com, an AI-powered immigration directory connecting immigrants with 1,800+ verified immigration consultants and lawyers across Canada."
     },
     {
       year: "2024",
-      title: "Innovation Award",
-      description: "Recognized as one of Alberta's top innovative technology companies."
+      title: "Satori.care Launch",
+      description: "Introduced Satori.care, a mental health and wellness platform helping people find balance through accessible therapy and psychological support."
+    },
+    {
+      year: "2024",
+      title: "AI Innovation",
+      description: "Integrated advanced AI technologies across our platforms to enhance user experience and streamline service discovery."
+    },
+    {
+      year: "2025",
+      title: "Expanding Impact",
+      description: "Continuing to develop innovative solutions that make immigration and mental health services more accessible to Canadians."
+    }
+  ];
+
+  const platforms = [
+    {
+      name: "Immigrid",
+      url: "https://immigrid.com",
+      description: "Canada's ultimate immigration resource featuring 1,800+ verified immigration consultants, lawyers, and essential services. Our AI-powered platform makes finding the right immigration expert simple and efficient.",
+      tagline: "Your #1 Immigration Directory",
+      color: "tech-blue"
+    },
+    {
+      name: "Satori.care",
+      url: "https://satori.care",
+      description: "A mental health and wellness platform dedicated to helping individuals find balance through accessible therapy and psychological support services.",
+      tagline: "Find Balance",
+      color: "innovation-purple"
     }
   ];
 
@@ -73,7 +80,7 @@ export default function About() {
               </span>
             </h1>
             <p className="text-xl text-professional-grey max-w-3xl mx-auto leading-relaxed" data-testid="about-subtitle">
-              Founded in Alberta, Canada, we're passionate about creating innovative solutions that drive business growth and technological advancement.
+              We build AI-powered platforms that make essential services more accessible. From immigration to mental health, we're transforming how Canadians connect with the support they need.
             </p>
             <div className="flex items-center justify-center space-x-2 text-tech-blue">
               <MapPin className="w-5 h-5" />
@@ -90,10 +97,10 @@ export default function About() {
             <div className="space-y-6 animate-fadeIn">
               <h2 className="text-4xl font-bold font-display" data-testid="mission-title">Our Mission</h2>
               <p className="text-lg text-professional-grey leading-relaxed" data-testid="mission-text-1">
-                At Knoogi Labs, we believe in the power of technology to transform businesses and improve lives. Our team combines technical expertise with creative innovation to deliver solutions that exceed expectations and drive real results.
+                At Knoogi Labs, we believe technology should make essential services accessible to everyone. We've built platforms like Immigrid and Satori.care to connect Canadians with the immigration and mental health support they need.
               </p>
               <p className="text-lg text-professional-grey leading-relaxed" data-testid="mission-text-2">
-                Based in the heart of Alberta, we understand the unique challenges and opportunities that Canadian businesses face in the digital landscape. We're committed to helping our clients succeed with cutting-edge technology and personalized service.
+                Based in Alberta, we leverage AI and modern technology to break down barriers. Our platforms serve thousands of users, from newcomers navigating Canadian immigration to individuals seeking mental wellness support.
               </p>
               
               <div className="grid grid-cols-2 gap-6 pt-6">
@@ -101,9 +108,9 @@ export default function About() {
                   <CardContent className="p-0">
                     <div className="flex items-center justify-center mb-2">
                       <Calendar className="w-6 h-6 text-tech-blue mr-2" />
-                      <div className="text-3xl font-bold text-tech-blue font-display" data-testid="founded-year">2019</div>
+                      <div className="text-3xl font-bold text-tech-blue font-display" data-testid="founded-year">1800+</div>
                     </div>
-                    <div className="text-professional-grey">Founded</div>
+                    <div className="text-professional-grey">Immigration Experts</div>
                   </CardContent>
                 </Card>
                 <Card className="text-center p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -139,7 +146,7 @@ export default function About() {
       </section>
 
       {/* Founders Section */}
-      <section className="py-20 gradient-overlay">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16 animate-fadeIn">
             <h2 className="text-4xl font-bold font-display" data-testid="founders-title">Meet Our Founders</h2>
@@ -180,13 +187,58 @@ export default function About() {
         </div>
       </section>
 
-      {/* Timeline Section */}
+      {/* Our Platforms Section */}
       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-16 animate-fadeIn">
+            <h2 className="text-4xl font-bold font-display" data-testid="platforms-title">Our Platforms</h2>
+            <p className="text-xl text-professional-grey max-w-3xl mx-auto" data-testid="platforms-description">
+              Innovative solutions that connect Canadians with essential services.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-20">
+            {platforms.map((platform, index) => (
+              <Card 
+                key={index} 
+                className="bg-white p-8 shadow-lg hover:shadow-xl transition-all duration-300 animate-fadeIn"
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                <CardContent className="p-0 space-y-4">
+                  <div className="flex items-center justify-between">
+                    <h3 className={`text-3xl font-bold text-${platform.color} font-display`} data-testid={`platform-name-${index}`}>
+                      {platform.name}
+                    </h3>
+                    <a 
+                      href={platform.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className={`text-${platform.color} hover:underline font-medium`}
+                      data-testid={`platform-link-${index}`}
+                    >
+                      Visit →
+                    </a>
+                  </div>
+                  <p className="text-sm font-semibold text-professional-grey" data-testid={`platform-tagline-${index}`}>
+                    {platform.tagline}
+                  </p>
+                  <p className="text-professional-grey leading-relaxed" data-testid={`platform-description-${index}`}>
+                    {platform.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="py-20 gradient-overlay">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16 animate-fadeIn">
             <h2 className="text-4xl font-bold font-display" data-testid="timeline-title">Our Journey</h2>
             <p className="text-xl text-professional-grey max-w-3xl mx-auto" data-testid="timeline-description">
-              From humble beginnings to becoming a leading development firm in Alberta.
+              Building platforms that make a real difference in people's lives.
             </p>
           </div>
 
@@ -228,7 +280,7 @@ export default function About() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 gradient-overlay">
+      <section className="py-20 bg-gradient-to-br from-tech-blue/10 to-innovation-purple/10">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center animate-fadeIn">
           <h2 className="text-4xl font-bold font-display mb-6" data-testid="cta-title">
             Ready to Work with Us?
