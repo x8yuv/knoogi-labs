@@ -12,6 +12,7 @@ The application uses a monorepo structure with a React frontend and Express.js b
   - Removed inflated statistics from careers page (100+ projects, 50+ clients)
   - Removed Global Impact section with fabricated statistics (25+ countries, 1M+ lives, 80% efficiency gains)
   - Removed Innovation Labs section containing blockchain, quantum computing, and fake patent claims
+  - Removed Calgary city references - now consistently shows "Alberta, Canada" across footer, contact, and privacy pages
 
 - **3D Component Removal**: Completely removed Spline 3D component from home page
   - Replaced with responsive gradient background that works across all devices

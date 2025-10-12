@@ -106,7 +106,7 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4 font-display">Contact</h4>
             <div className="space-y-2 text-gray-300">
-              <p data-testid="footer-address">Calgary, Alberta, Canada</p>
+              <p data-testid="footer-address">Alberta, Canada</p>
               <p data-testid="footer-email">contact@knoogi.com</p>
             </div>
           </div>

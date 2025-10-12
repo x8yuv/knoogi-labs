@@ -218,7 +218,7 @@ export default function PrivacyPolicy() {
                 <strong>Email:</strong> privacy@knoogilabs.com
               </p>
               <p className="text-professional-grey mb-2">
-                <strong>Address:</strong> Calgary, Alberta, Canada
+                <strong>Address:</strong> Alberta, Canada
               </p>
               <p className="text-professional-grey">
                 <strong>Phone:</strong> +1 (403) 555-0123

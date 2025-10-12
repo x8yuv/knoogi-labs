@@ -100,7 +100,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: "Address",
-      details: ["Calgary, Alberta", "Canada T2P 1J9"],
+      details: ["Alberta, Canada"],
       color: "tech-blue"
     },
     {
