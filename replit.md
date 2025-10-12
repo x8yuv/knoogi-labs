@@ -5,6 +5,20 @@ Knoogi Labs is a modern full-stack web application built for a Canadian technolo
 The application uses a monorepo structure with a React frontend and Express.js backend, designed for deployment on Replit with integrated development tooling.
 
 ## Recent Changes (October 12, 2025)
+- **Mock Data Cleanup**: Removed all fake statistics and placeholder content from the website
+  - Removed "1,800+ Immigration Experts" fake stat from about page - Knoogi Labs is an IT firm, not an immigration resource
+  - Removed fake office image (Unsplash stock photo) from about page
+  - Updated platform descriptions to accurately reflect Knoogi Labs' role as platform builder (not the platform itself)
+  - Removed inflated statistics from careers page (100+ projects, 50+ clients)
+  - Removed Global Impact section with fabricated statistics (25+ countries, 1M+ lives, 80% efficiency gains)
+  - Removed Innovation Labs section containing blockchain, quantum computing, and fake patent claims
+
+- **3D Component Removal**: Completely removed Spline 3D component from home page
+  - Replaced with responsive gradient background that works across all devices
+  - Eliminated WebGL context errors in testing environments
+  - Improved mobile performance and loading speed
+  - Hero section now uses clean gradient: from-blue-50 via-indigo-50 to-purple-50
+
 - **Social Media Sharing**: Fixed Open Graph and Twitter Card meta tags to properly display logo and banner on WhatsApp, Facebook, LinkedIn, and other platforms
   - Updated all og:image and twitter:image tags to use absolute URLs (https://knoogi.com/...)
   - Resized social media banner to optimal 1200×630 pixels for best display across platforms

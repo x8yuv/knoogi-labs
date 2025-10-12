@@ -29,7 +29,7 @@ export default function About() {
     {
       year: "2023",
       title: "Immigrid Platform Launch",
-      description: "Launched Immigrid.com, an AI-powered immigration directory connecting immigrants with 1,800+ verified immigration consultants and lawyers across Canada."
+      description: "Launched Immigrid.com, an AI-powered immigration directory that helps newcomers find immigration consultants and lawyers across Canada."
     },
     {
       year: "2024",
@@ -52,7 +52,7 @@ export default function About() {
     {
       name: "Immigrid",
       url: "https://immigrid.com",
-      description: "Canada's ultimate immigration resource featuring 1,800+ verified immigration consultants, lawyers, and essential services. Our AI-powered platform makes finding the right immigration expert simple and efficient.",
+      description: "An AI-powered immigration directory that helps newcomers find immigration consultants, lawyers, and essential services across Canada. Making the search for the right immigration expert simple and efficient.",
       tagline: "Your #1 Immigration Directory",
       color: "tech-blue"
     },
