@@ -16,7 +16,7 @@
   --secondary: hsl(256 72% 57%);
   --secondary-foreground: hsl(0 0% 100%);
   --muted: hsl(210 16% 98%);
-  --muted-foreground: hsl(215 16% 47%);
+  --muted-foreground: hsl(215 20% 35%);
   --accent: hsl(158 76% 40%);
   --accent-foreground: hsl(0 0% 100%);
   --destructive: hsl(0 84% 60%);
@@ -50,7 +50,7 @@
   --success-green: hsl(158 76% 40%);
   --clean-bg: hsl(210 16% 98%);
   --rich-black: hsl(26 9% 10%);
-  --professional-grey: hsl(215 16% 47%);
+  --professional-grey: hsl(215 20% 35%);
 }
 
 .dark {
