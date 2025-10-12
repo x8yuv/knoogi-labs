@@ -12,6 +12,13 @@ The application uses a monorepo structure with a React frontend and Express.js b
   - Updated og:url to use knoogi.com domain instead of replit.app
   - Social banner image includes branded gradient with company name and tagline
 
+- **Theme and Accessibility Improvements**: Fixed contrast issues and switched to light theme by default
+  - Changed default theme from "system" to "light" to ensure consistent user experience
+  - Improved text contrast for better readability and WCAG AA compliance
+  - Darkened professional-grey color from hsl(215 16% 47%) to hsl(215 20% 35%) - now achieves 7:1 contrast ratio
+  - Updated muted-foreground color to match for consistency
+  - All headings and body text now meet accessibility standards for color contrast
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
