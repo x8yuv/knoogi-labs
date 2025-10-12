@@ -93,54 +93,14 @@ export default function About() {
       {/* Mission Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6 animate-fadeIn">
-              <h2 className="text-4xl font-bold font-display" data-testid="mission-title">Our Mission</h2>
-              <p className="text-lg text-professional-grey leading-relaxed" data-testid="mission-text-1">
-                At Knoogi Labs, we believe technology should make essential services accessible to everyone. We've built platforms like Immigrid and Satori.care to connect Canadians with the immigration and mental health support they need.
-              </p>
-              <p className="text-lg text-professional-grey leading-relaxed" data-testid="mission-text-2">
-                Based in Alberta, we leverage AI and modern technology to break down barriers. Our platforms serve thousands of users, from newcomers navigating Canadian immigration to individuals seeking mental wellness support.
-              </p>
-              
-              <div className="grid grid-cols-2 gap-6 pt-6">
-                <Card className="text-center p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <CardContent className="p-0">
-                    <div className="flex items-center justify-center mb-2">
-                      <Calendar className="w-6 h-6 text-tech-blue mr-2" />
-                      <div className="text-3xl font-bold text-tech-blue font-display" data-testid="founded-year">1800+</div>
-                    </div>
-                    <div className="text-professional-grey">Immigration Experts</div>
-                  </CardContent>
-                </Card>
-                <Card className="text-center p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <CardContent className="p-0">
-                    <div className="flex items-center justify-center mb-2">
-                      <Building className="w-6 h-6 text-innovation-purple mr-2" />
-                      <div className="text-3xl font-bold text-innovation-purple font-display" data-testid="headquarters">Alberta</div>
-                    </div>
-                    <div className="text-professional-grey">Headquarters</div>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
-            
-            <div className="relative animate-fadeIn">
-              <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Modern office workspace with collaborative areas and natural lighting" 
-                className="rounded-2xl shadow-2xl w-full h-auto"
-                data-testid="office-image"
-              />
-              <Card className="absolute top-6 right-6 shadow-lg border-0">
-                <CardContent className="p-3">
-                  <div className="flex items-center space-x-2">
-                    <MapPin className="text-success-green w-4 h-4" />
-                    <span className="text-sm font-medium" data-testid="office-location">Alberta, Canada</span>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+          <div className="max-w-4xl mx-auto text-center space-y-6 animate-fadeIn">
+            <h2 className="text-4xl font-bold font-display" data-testid="mission-title">Our Mission</h2>
+            <p className="text-lg text-professional-grey leading-relaxed" data-testid="mission-text-1">
+              At Knoogi Labs, we believe technology should make essential services accessible to everyone. We've built platforms like Immigrid and Satori.care to connect Canadians with the immigration and mental health support they need.
+            </p>
+            <p className="text-lg text-professional-grey leading-relaxed" data-testid="mission-text-2">
+              Based in Alberta, we leverage AI and modern technology to break down barriers. Our platforms serve thousands of users, from newcomers navigating Canadian immigration to individuals seeking mental wellness support.
+            </p>
           </div>
         </div>
       </section>

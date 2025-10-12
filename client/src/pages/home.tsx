@@ -3,7 +3,6 @@ import { Footer } from "@/components/ui/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import Spline from '@splinetool/react-spline';
 import aiDevelopmentImage from "@assets/ai-7977960_1920_1755937825207.jpg";
 import appDevelopmentImage from "@assets/iphone-676726_1920_1755938088882.jpg";
 import digitalMarketingImage from "@assets/online-marketing-1246457_1920_1755938312222.jpg";
@@ -96,20 +95,7 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="h-screen pt-16 relative overflow-hidden" data-testid="hero-section">
-        {/* Desktop Spline */}
-        <div className="hidden md:block w-full h-full">
-          <Spline
-            scene="https://prod.spline.design/O4KW31BYKC1a4M1N/scene.splinecode"
-            style={{ 
-              width: '100%', 
-              height: '100%'
-            }}
-            className="w-full h-full"
-          />
-        </div>
-        
-        {/* Mobile Hero */}
-        <div className="md:hidden w-full h-full bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900 relative">
+        <div className="w-full h-full bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900 relative">
           {/* Animated background elements */}
           <div className="absolute inset-0">
             <div className="absolute top-20 left-10 w-72 h-72 bg-tech-blue/20 rounded-full blur-3xl animate-pulse"></div>
@@ -137,11 +123,11 @@ export default function Home() {
           
           {/* Content */}
           <div className="relative z-10 flex items-center justify-center h-full px-6">
-            <div className="text-center max-w-sm mx-auto">
+            <div className="text-center max-w-4xl mx-auto">
               {/* Logo/Icon */}
-              <div className="mb-8 relative">
-                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-tech-blue to-innovation-purple rounded-3xl shadow-2xl flex items-center justify-center mb-6 animate-bounce">
-                  <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="mb-8 md:mb-12 relative">
+                <div className="w-24 h-24 md:w-32 md:h-32 mx-auto bg-gradient-to-br from-tech-blue to-innovation-purple rounded-3xl shadow-2xl flex items-center justify-center mb-6 animate-bounce">
+                  <svg className="w-12 h-12 md:w-16 md:h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
@@ -149,7 +135,7 @@ export default function Home() {
               </div>
               
               {/* Main heading */}
-              <h1 className="text-4xl font-bold font-display mb-4 text-rich-black dark:text-white leading-tight">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-display mb-6 text-rich-black dark:text-white leading-tight">
                 Welcome to{" "}
                 <span className="bg-gradient-to-r from-tech-blue to-innovation-purple bg-clip-text text-transparent">
                   Knoogi Labs
@@ -157,26 +143,26 @@ export default function Home() {
               </h1>
               
               {/* Subtitle */}
-              <p className="text-lg text-professional-grey dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl lg:text-2xl text-professional-grey dark:text-gray-300 mb-8 md:mb-12 leading-relaxed max-w-3xl mx-auto">
                 Modern development solutions from the heart of Alberta, Canada. Building the future with innovative technology.
               </p>
               
               {/* Action buttons */}
-              <div className="space-y-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
                 <Link href="/services">
-                  <Button className="bg-gradient-to-r from-tech-blue to-innovation-purple text-white hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold w-full py-3 rounded-xl">
+                  <Button className="bg-gradient-to-r from-tech-blue to-innovation-purple text-white hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold w-full sm:w-auto px-8 py-3 rounded-xl">
                     Explore Our Services
                   </Button>
                 </Link>
                 <Link href="/contact">
-                  <Button variant="outline" className="w-full py-3 border-2 border-tech-blue/30 dark:border-white/30 text-tech-blue dark:text-white hover:bg-tech-blue dark:hover:bg-white hover:text-white dark:hover:text-slate-900 transition-all duration-300 rounded-xl backdrop-blur-sm">
+                  <Button variant="outline" className="w-full sm:w-auto px-8 py-3 border-2 border-tech-blue/30 dark:border-white/30 text-tech-blue dark:text-white hover:bg-tech-blue dark:hover:bg-white hover:text-white dark:hover:text-slate-900 transition-all duration-300 rounded-xl backdrop-blur-sm">
                     Get In Touch
                   </Button>
                 </Link>
               </div>
               
               {/* Scroll indicator */}
-              <div className="mt-12 animate-bounce">
+              <div className="mt-12 md:mt-16 animate-bounce">
                 <svg className="w-6 h-6 text-tech-blue/60 dark:text-white/60 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
